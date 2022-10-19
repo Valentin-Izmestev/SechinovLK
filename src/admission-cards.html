@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="./local/templates/lka/css/style.min.css">
+ 
+</head>
+
+<body> 
+	@@include('_header.html')
+	<main class="main">
+		<section class="admission-section">
+			<div class="inner">
+				<h1 class="h2">Приёмная комиссия 2021</h1>
+				<span class="subtitle">Выберите направление</span>
+				<div class="referral-cards-box">
+					<div class="referral-card">
+						<img src="./local/templates/lka/img/middle.svg" class="spacer" alt="Среднее профессиональное образование">
+						<a href="#" class="btn btn--blue">Среднее профессиональное образование</a>
+					</div>
+					<div class="referral-card">
+						<img src="./local/templates/lka/img/speciality.svg" class="spacer" alt="Бакалавриат, специалитет">
+						<a href="#" class="btn btn--blue">Бакалавриат, специалитет</a>
+					</div>  
+				</div>
+			 </div>
+		</section>
+		 
+	</main>
+	@@include('_footer.html')
+	<div class="great-shadow"></div>
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+	<script src="local/templates/lka/js/script.js"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

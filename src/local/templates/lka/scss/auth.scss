@@ -1,0 +1,100 @@
+.auth-page{
+    background-color: var(--white);
+}
+.decore-elem{
+    position: fixed;
+    width: 49.2%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url(../img/sechenov.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.authreg-form-box{
+    width: 50%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    .logo{
+        margin-bottom: 5rem;
+    }
+}
+.inner-auth{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.auth-tab{
+    display: flex;
+    margin-bottom: 3rem;
+    .auth-tab__elem{
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.25;
+        color: var(--border);
+        transition: var(--great-transition);
+        background-color: transparent;
+        &.active{
+            color: var(--darkgrey)
+        }
+        &:not(:last-child){
+            margin-right: 2.7rem;
+        }
+    }
+} 
+
+.eye-open{
+    opacity: 1;
+    transition: var(--great-transition); 
+}
+.eye-close{
+    opacity: 0;
+    transition: var(--great-transition); 
+}
+.form-elem--password-show{
+    .eye-open{
+        opacity: 0; 
+    }
+    .eye-close{
+        opacity: 1; 
+    }
+}
+
+
+@media screen and (max-width: 1190px){
+    .authreg-form-box { 
+        padding-right: 2%; 
+    }
+}
+@media screen and (max-width: 800px){
+    .inner-auth{
+        justify-content: center;
+    }
+    .decore-elem { 
+        width: 100%; 
+    } 
+    .authreg-form-box {
+        width: 100%;
+        padding-right: 0;
+        max-width: 550px;
+        background: var(--white);
+        padding: 3rem;
+        border-radius: 2rem; 
+    }
+}
+@media screen and (max-width: 400px){
+    .authreg-form-box {
+        padding: 3.5rem 2rem;
+
+        .logo {
+            margin-bottom: 3rem;
+        }
+    } 
+    .auth-tab {
+        .auth-tab__elem{
+            font-size: 2rem;
+        }
+    } 
+}
