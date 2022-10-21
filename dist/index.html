@@ -290,8 +290,8 @@
 											<input type="text" class="form-elem__input" name="patronymic" placeholder="Отчество" autocomplete="off">
 											<span>Отчество</span>
 										</label> 
-										<label class="form-elem form-elem__input--validation">
-											<select class="form-elem__input form__category-select" name="gender" id="csefat127" > 
+										<label class="form-elem ">
+											<select class="form-elem__input form__category-select form-elem__input--validation" name="gender" id="csefat127" > 
 												<option value="">This is a placeholder</option>
 												<option value="m">Мужской</option> 
 												<option value="w">Женский</option> 
@@ -316,8 +316,10 @@
 									<label class="form-elem">
 										<input type="text" class="form-elem__input form-elem__input--validation" name="place-of-birth" placeholder="Место рождения" autocomplete="off">
 										<span>Место рождения<sup>*</sup></span>
-									</label> 
-									drag-and-drop элемент разместить здесь
+									</label>  
+									<div class="columns-box">
+										<input class="file-input form-elem__input--validation" type="file" multiple="multiple" name="files[]" >
+									</div>
 									<p class="form-warning">
 										<span class="color-red">Внимание!</span> Прикрепляемый файл должен <b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления заявления о приеме, назовите файл «заявление о приеме»)
 									</p>
