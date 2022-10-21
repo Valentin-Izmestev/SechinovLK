@@ -321,7 +321,7 @@ function checkingFullnessContainerFields(elem){
     let containerInputs = container.querySelectorAll('.form-elem__input--validation');
     let fullesFlag = true; 
     containerInputs.forEach(input=>{
-        console.log(input + ' - ' + input.name + ' - ' + input.value);
+        // console.log(input + ' - ' + input.name + ' - ' + input.value);
         if(!input.value){
             fullesFlag = false;
         } 
