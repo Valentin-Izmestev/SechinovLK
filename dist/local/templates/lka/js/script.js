@@ -2209,10 +2209,10 @@ if(btnAddRelative){
 function showModal(classModalWindow){
     let modalContainer = $('.modal-container');
     let modal = $(`.modal-container ${classModalWindow}`); 
-    modalContainer.fadeIn(100);
+    modalContainer.addClass('modal-container--show');
     setTimeout(function(){
         modal.fadeIn(100);
-    }, 300);
+    }, 100);
 }
 /**
  * hideModal - функция скрывающее модальное окно 
@@ -2223,21 +2223,30 @@ function hideModal(classModalWindow){
     let modal = $(`.modal-container ${classModalWindow}`); 
     modal.fadeOut(100);
     setTimeout(function(){
-        modalContainer.fadeOut(100); 
-    }, 300);
+        modalContainer.removeClass('modal-container--show');
+    }, 100);
 }
 
-// !!!!!!!!!!!!!!!Пример кода вызова модального окна. Удалить его на боевом сайте!!!!!!!!!!!!!!!!
-let submitBtn = $('.form-questionnaire .btn[type="submit"]'); 
-if(submitBtn){
-    submitBtn.on('click', function(e){
-        e.preventDefault();
-        showModal('.modal-message');
-    });
-} 
-let modalMessageCloseBtn = $('.modal-message');
-if(modalMessageCloseBtn){
-    modalMessageCloseBtn.on('click', function(){
-        hideModal('.modal-message');
-    });
-}
+
+let modalContainer = $('.modal-container');
+modalContainer.on('click', function(e){
+    if(e.target.classList.contains('modal-container')){ 
+        hideModal('.modal');
+    } 
+});
+
+let showModalBtn = $('.btn--show-modal'); //элементы открывающие модалки.
+let btnCloseModal = $('.close-modal'); //какой то элемент в модалке с классом close-modal нужный  для закрытия модалки (по умолчанию крестик)
+
+//открытие конкретной модалки
+showModalBtn.on('click', function(e){
+    e.preventDefault();
+    if(e.target.getAttribute('data-open-modal')){   
+        showModal('.'+ e.target.getAttribute('data-open-modal'));
+    } 
+});
+//закрытие всех модалок
+btnCloseModal.on('click', function(e){
+    e.preventDefault(); 
+    hideModal('.modal');
+})

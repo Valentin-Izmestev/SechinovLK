@@ -311,34 +311,116 @@ main.flex-main{
     }
 }
 
-
+.cross-btn{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: var(--blue);
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: var(--great-transition); 
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: var(--blue);
+        transform: translate(-50%, -50%) rotate(-45deg);
+        transition: var(--great-transition); 
+    }
+    &:hover{
+        &::before,
+        &::after{
+            background-color: var(--green);
+        }
+    }
+}
 .modal-container{
     position: fixed;
-    display: none; 
     top: 0;
+    bottom: 0;
+    right: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(57, 66, 77, 0.44);
-    z-index: 10;
-    overflow: auto;
-    color: rgb(13, 71, 161);
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;  
+    align-items: center; 
+    background-color:rgba(57, 66, 77, 0.44); 
+    padding: 2rem;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--great-transition);
+    z-index: 120;
+    &--show{
+        opacity: 1;
+        visibility: visible;
+    }
 }
 .modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    display: none;
+    position: relative; 
     width: 100%;
     max-width: 900px;
     background-color: var(--white);
     border-radius: 1rem;
     box-sizing: border-box;
-    padding: 3rem 2.8rem;
-    transform: translate(-50%, -50%);
-    z-index: 11;
+    padding: 3rem 2.8rem; 
+    z-index: 130;
+    overflow: auto;
+    .cross-btn{
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 1rem;
+        right: 1rem;
+    }
+    h1, h2, h3, h4, h5, h6{
+        margin-bottom: 2rem;
+    }
+    p, ul, ol{
+        margin-bottom: 1rem;
+    }
+    ul{ 
+        li{
+            position: relative;
+            list-style-type: none;
+            padding-left: 1.1rem;
+            box-sizing: border-box;
+            margin-bottom: 2rem;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0.8rem;
+                left: 0;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: var(--blue); 
+            }
+        }
+    }
+    ol{
+        padding-left: 1.2rem;
+        li{
+            list-style-type: decimal;
+        }
+    }
 }
-.modal-message{
-    display: none;
+.modal-message{ 
     max-width: 360px;
     text-align: center;
     svg{
@@ -353,10 +435,9 @@ main.flex-main{
     }
     .modal-message__text-box{
         margin-bottom: 1.6rem;
-        p{
-            margin-bottom: 1rem;
-        }
+        
     }
+     
     .btn{
         display: block;
         width: auto;

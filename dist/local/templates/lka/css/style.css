@@ -2800,23 +2800,87 @@ main.flex-main .inner {
   grid-column: 1/3;
 }
 
-.modal-container {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(57, 66, 77, 0.44);
-  z-index: 10;
-  overflow: auto;
-  color: rgb(13, 71, 161);
+.cross-btn {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
 }
-
-.modal {
+.cross-btn::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transition: var(--great-transition);
+  -o-transition: var(--great-transition);
+  transition: var(--great-transition);
+}
+.cross-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transition: var(--great-transition);
+  -o-transition: var(--great-transition);
+  transition: var(--great-transition);
+}
+.cross-btn:hover::before, .cross-btn:hover::after {
+  background-color: var(--green);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(57, 66, 77, 0.44);
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: var(--great-transition);
+  -o-transition: var(--great-transition);
+  transition: var(--great-transition);
+  z-index: 120;
+}
+.modal-container--show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  display: none;
+  position: relative;
   width: 100%;
   max-width: 900px;
   background-color: var(--white);
@@ -2824,14 +2888,48 @@ main.flex-main .inner {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 3rem 2.8rem;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 11;
+  z-index: 130;
+  overflow: auto;
+}
+.modal .cross-btn {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 1rem;
+  right: 1rem;
+}
+.modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6 {
+  margin-bottom: 2rem;
+}
+.modal p, .modal ul, .modal ol {
+  margin-bottom: 1rem;
+}
+.modal ul li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 1.1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+.modal ul li::after {
+  content: "";
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+.modal ol {
+  padding-left: 1.2rem;
+}
+.modal ol li {
+  list-style-type: decimal;
 }
 
 .modal-message {
-  display: none;
   max-width: 360px;
   text-align: center;
 }
@@ -2847,9 +2945,6 @@ main.flex-main .inner {
 }
 .modal-message .modal-message__text-box {
   margin-bottom: 1.6rem;
-}
-.modal-message .modal-message__text-box p {
-  margin-bottom: 1rem;
 }
 .modal-message .btn {
   display: block;
