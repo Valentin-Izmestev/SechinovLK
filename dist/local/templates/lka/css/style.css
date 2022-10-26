@@ -3320,6 +3320,9 @@ form .columns-box .form-elem {
   line-height: 1.5;
 }
 
+.form-questionnaire .form-questionnaire__item {
+  display: none;
+}
 .form-questionnaire .spoiler {
   margin-bottom: 2rem;
 }
