@@ -207,7 +207,48 @@ fieldset{
         line-height: 1.5;
     }
 }
-
+.form-elem-checkbox-full{ 
+     position: relative;
+     display: block;
+    input{
+        display: none;
+    }
+    svg{
+        float: left;
+        display: block;
+        width: 2.4rem;
+        height: auto;
+        margin-right: 1rem;
+        cursor: pointer;
+        path{
+            opacity: 0;
+            transition: var(--great-transition);
+        }
+    }
+    input:checked ~ svg{
+        path{
+            opacity: 1;
+        }
+    }
+    .form-elem-checkbox-full__caption{
+        position: relative;
+        display: block;
+        padding-top: 0.2rem;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    &::after{
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+    } 
+}
+.checkbox-list{
+    li{
+        margin-bottom: 1.5rem;
+    }
+}
 .auth-form, .reg-form{
     .form-elem{
         &:not(:first-child){
@@ -250,7 +291,10 @@ form{
 }
 .form-questionnaire{
     .form-questionnaire__item{
-        display: none; 
+        // display: none; 
+    }
+    .spoiler{
+        margin-bottom: 2rem;
     }
     .relative-box-separator{
         border-top: 1px solid var(--grey);

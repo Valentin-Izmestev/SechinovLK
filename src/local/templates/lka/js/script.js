@@ -182,6 +182,62 @@ $(function(){
                 }
             }
         });
+
+            // ------------------РАБОТА С МОДАЛЬНЫМИ ОКНАМИ------------------
+    /**
+     * showModal - функция выводящая модальное окно 
+     * @param {string} classModalWindow - уникальный класс или индификатор модального окна.
+     */
+    function showModal(classModalWindow){
+        let modalContainer = $('.modal-container');
+        let modal = $(`.modal-container ${classModalWindow}`); 
+        modalContainer.addClass('modal-container--show');
+        setTimeout(function(){
+            modal.fadeIn(100);
+        }, 100);
+    }
+    /**
+     * hideModal - функция скрывающее модальное окно 
+     * @param {string} classModalWindow - уникальный класс или индификатор модального окна.
+     */
+    function hideModal(classModalWindow){
+        let modalContainer = $('.modal-container');
+        let modal = $(`.modal-container ${classModalWindow}`); 
+        modal.fadeOut(100);
+        setTimeout(function(){
+            modalContainer.removeClass('modal-container--show');
+        }, 100);
+    } 
+    
+    let modalContainer = $('.modal-container');
+    modalContainer.on('click', function(e){
+        if(e.target.classList.contains('modal-container')){ 
+            hideModal('.modal');
+        } 
+    });
+
+    let showModalBtn = $('.btn--show-modal'); //элементы открывающие модалки.
+    let btnCloseModal = $('.close-modal'); //какой то элемент в модалке с классом close-modal нужный  для закрытия модалки (по умолчанию крестик)
+
+    //открытие конкретной модалки
+    showModalBtn.on('click', function(e){
+        e.preventDefault();
+        if(e.target.getAttribute('data-open-modal')){   
+            showModal('.'+ e.target.getAttribute('data-open-modal'));
+        } 
+    });
+    //закрытие всех модалок
+    btnCloseModal.on('click', function(e){
+        e.preventDefault(); 
+        hideModal('.modal');
+    });
+
+    // ----------SPOILER-------------
+    let spoilerBtn = $('.spoiler .spoiler__header');
+    spoilerBtn.on('click', function(){
+        $(this).toggleClass('spoiler__header--active');
+        $(this).next('.spoiler__container').slideToggle(200);
+    })
 });
 
 let greatShadow = document.querySelector('.great-shadow');
@@ -275,7 +331,8 @@ if(formCategorySelects.length > 0){
 let arStatusItems = document.querySelectorAll('.status-list__item'); //массив со статус элементами (из левого сайдбара)
 let arContainers = document.querySelectorAll('.form-questionnaire__item'); //массив с контейнерами 
 let arrAllInput = document.querySelectorAll('.form-elem__input--validation'); //массив с элементами формы обязательными к заполнению
-
+let arrAllInputGroup = document.querySelectorAll('.form-elem__input--validation-group');
+ 
 /**
  * функция плавного показа элемента - аналог fadeIn() из jQuery
  * @param {object} elem - элемент DOM с которым будут проводится манипуляции
@@ -308,25 +365,44 @@ function fadeOut(elem) {
 		opacity -= opacity * 0.1; 
 	}, 1); 
 }
-
-// let testEl = document.querySelectorAll('.form-elem__input--validation');
-// console.log(testEl)
-
+ 
 /**Функция проверки на заполнненость полей страницы таба
  * @param {object} elem - елемент input 
  * возвращает массив с id контейнера и статусом его заполненности.
  */
 function checkingFullnessContainerFields(elem){ 
     let container = elem.closest('.form-questionnaire__item');
-    let containerInputs = container.querySelectorAll('.form-elem__input--validation');
-    let fullesFlag = true; 
-    containerInputs.forEach(input=>{
-        // console.log(input + ' - ' + input.name + ' - ' + input.value);
-        if(!input.value){
-            fullesFlag = false;
-        } 
-    });
-    let arAnswer = [container.getAttribute('id'), fullesFlag]; 
+    let arElemValidationGroup = container.querySelectorAll('.form-elem__input--validation-group');
+    let containerInputs = container.querySelectorAll('.form-elem__input--validation'); 
+    let groupFlag = true;
+    let itemFlag = true;
+    let fullesFlag = false; 
+
+    if(arElemValidationGroup){ 
+        for(let key in arElemValidationGroup){
+            if(arElemValidationGroup[key].checked){ 
+                groupFlag = true;
+                break;
+            }else{
+                groupFlag = false; 
+            }
+        }
+    } 
+    if(containerInputs){
+        containerInputs.forEach(input=>{ 
+            if(!input.value){
+                itemFlag = false;
+            } 
+        });
+    }
+    
+    if(groupFlag && itemFlag){
+        fullesFlag = true;
+    }else{
+        fullesFlag = false;
+    }
+    
+    let arAnswer = [container.getAttribute('id'), fullesFlag];  
     return arAnswer; 
 }
 /**
@@ -428,7 +504,11 @@ arTabBtn.forEach(btn=>{
     });
 })
 
-
+arrAllInputGroup.forEach(item=>{
+    item.addEventListener('change', function(){
+        toggleActiveTabElements(checkingFullnessContainerFields(this)); 
+    });
+});
 
 // Код работы большого таба с формой - КОНЕЦ
 
@@ -471,54 +551,3 @@ if(btnAddRelative){
         relativeBoxNumber ++;
     })
 }
-
-
-// ------------------РАБОТА С МОДАЛЬНЫМИ ОКНАМИ------------------
-/**
- * showModal - функция выводящая модальное окно 
- * @param {string} classModalWindow - уникальный класс или индификатор модального окна.
- */
-function showModal(classModalWindow){
-    let modalContainer = $('.modal-container');
-    let modal = $(`.modal-container ${classModalWindow}`); 
-    modalContainer.addClass('modal-container--show');
-    setTimeout(function(){
-        modal.fadeIn(100);
-    }, 100);
-}
-/**
- * hideModal - функция скрывающее модальное окно 
- * @param {string} classModalWindow - уникальный класс или индификатор модального окна.
- */
-function hideModal(classModalWindow){
-    let modalContainer = $('.modal-container');
-    let modal = $(`.modal-container ${classModalWindow}`); 
-    modal.fadeOut(100);
-    setTimeout(function(){
-        modalContainer.removeClass('modal-container--show');
-    }, 100);
-}
-
-
-let modalContainer = $('.modal-container');
-modalContainer.on('click', function(e){
-    if(e.target.classList.contains('modal-container')){ 
-        hideModal('.modal');
-    } 
-});
-
-let showModalBtn = $('.btn--show-modal'); //элементы открывающие модалки.
-let btnCloseModal = $('.close-modal'); //какой то элемент в модалке с классом close-modal нужный  для закрытия модалки (по умолчанию крестик)
-
-//открытие конкретной модалки
-showModalBtn.on('click', function(e){
-    e.preventDefault();
-    if(e.target.getAttribute('data-open-modal')){   
-        showModal('.'+ e.target.getAttribute('data-open-modal'));
-    } 
-});
-//закрытие всех модалок
-btnCloseModal.on('click', function(e){
-    e.preventDefault(); 
-    hideModal('.modal');
-})
