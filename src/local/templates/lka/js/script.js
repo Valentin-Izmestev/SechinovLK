@@ -305,15 +305,25 @@ let arFormCategory = [];
 let formCategorySelects = document.querySelectorAll('.form__category-select'); 
 if(formCategorySelects.length > 0){
     formCategorySelects.forEach(select=>{
-        arFormCategory.push(new Choices(select,{ 
-            noResultsText: 'Значение не найдено',
-            loadingText: 'Загрузка...',  
-            // placeholder: false, 
-            placeholder: true,
-            placeholderValue: '', 
-            searchPlaceholderValue: 'Введите искомое значение', 
-            searchEnabled: false, 
-        })); 
+        if(select.classList.contains('form__category-select--no-search')){
+            arFormCategory.push(new Choices(select,{  
+                // placeholder: false, 
+                placeholder: true,
+                placeholderValue: '',  
+                searchEnabled: false, 
+            })); 
+        }else{
+            arFormCategory.push(new Choices(select,{ 
+                noResultsText: 'Значение не найдено',
+                loadingText: 'Загрузка...',  
+                // placeholder: false, 
+                placeholder: true,
+                placeholderValue: '', 
+                searchPlaceholderValue: 'Введите искомое значение', 
+                searchEnabled: true, 
+            })); 
+        }
+        
         let thisSelect = select.parentElement.parentElement;
         
         select.addEventListener('change', function(){
@@ -529,13 +539,10 @@ if(btnAddRelative){
         let relativeSelects = document.querySelectorAll(`.relative-box-${relativeBoxNumber} .form__category-select`); 
         if(relativeSelects.length > 0){
             relativeSelects.forEach(select=>{
-                arFormSelets.push(new Choices(select,{ 
-                    noResultsText: 'Значение не найдено',
-                    loadingText: 'Загрузка...',  
+                arFormSelets.push(new Choices(select,{  
                     // placeholder: false, 
                     placeholder: true,
-                    placeholderValue: '', 
-                    searchPlaceholderValue: 'Введите искомое значение', 
+                    placeholderValue: '',  
                     searchEnabled: false, 
                 })); 
                 let thisSelect = select.parentElement.parentElement;

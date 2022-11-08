@@ -3179,14 +3179,6 @@ main.flex-main .inner {
   padding-right: 5rem;
   overflow: hidden;
 }
-.form-elem .choices .choices__list.choices__list--dropdown .choices__item:first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
 .form-elem .choices .choices__list--dropdown .choices__item--selectable,
 .form-elem .choices .choices__list[aria-expanded] .choices__item--selectable {
   padding-right: 3rem;
