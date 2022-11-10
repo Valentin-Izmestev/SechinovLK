@@ -203,8 +203,12 @@ main.flex-main{
             font-size: 1.4rem;
             line-height: 1.42;
             color: var(--darkgrey);
+            padding-left: 0;
             &:not(:last-child){
                 margin-bottom: 1.5rem;
+            }
+            &::before{
+                display: none;
             }
             .status-marker{
                 position: relative;
@@ -492,5 +496,106 @@ main.flex-main{
         display: none;
         padding: 2rem;
         box-sizing: border-box; 
+    }
+}
+
+
+.statements-tab__btn-box{
+    display: grid; 
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+    &--two-col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &--three-col{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &--four-col{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .btn{
+        &.active{
+            background-color: var(--green);
+        }
+    }
+}
+.statement{
+    position: relative;
+    background-color: var(--white);
+    // border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem 15rem 1.5rem 2rem; 
+    box-sizing: border-box;
+    overflow: hidden;
+    &:not(:first-child){
+        margin-top: 2rem
+    }
+    .statement__caption{
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .statement__info-panel{
+        display: flex;
+        justify-content: center;
+        .statement-info-item{
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+        }
+    }
+    .statement__btn{
+        position: absolute;
+        top: 0;
+        right: 0; 
+        display: flex; 
+        align-items: center;
+        padding: 0.5rem;
+        width: 150px;
+        height: 100%;
+        background-color: var(--blue);
+        font-size: 1.6rem;
+        color: var(--white);
+        text-align: center;
+        box-sizing: border-box;
+        transition: var(--great-transition);
+        &:hover{
+            text-decoration: none;
+            background-color: var(--green);
+        }
+    }
+}
+
+
+.statement-info-item{
+    display: flex;
+    font-size: 1.6rem;
+    .statement-info-item__key{
+        display: inline-block;
+        margin-right: 3px;
+        font-weight: 500;
+    }
+    .statement-info-item__value{
+        display: inline-block;
+        font-weight: 700;
+    }
+}
+
+
+.tab-js{
+    .tab-js__control-item{
+
+    }
+    .tab-js__container{
+        display: none;
+        position: relative;
+        opacity: 0;
+        transition: var(--great-transition);
+        &.active{
+            display: block;
+        }
+        &.on{
+            opacity: 1;
+        }
     }
 }

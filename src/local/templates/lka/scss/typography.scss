@@ -28,9 +28,48 @@ h5, .h5{
     color: black;
     font-weight: 600;
 }
+
 b{
     font-weight: 700;
 }
 .color-red{
     color: var(--red);
+}
+.main{
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5{
+        margin-bottom: 1.5rem;
+    }
+    p{
+        margin-bottom: 1.5rem;
+    }
+    ol, ul{
+        margin-bottom: 1.5rem;
+    }
+    ol{
+        padding: 2rem;
+        li{
+            list-style-type:decimal;
+        }
+    }
+    ul{
+        li{
+            position: relative;
+            padding-left: 2rem;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0.7rem;
+                left: 0;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background-color: var(--blue);
+            }
+        }
+    }
 }

@@ -17,6 +17,12 @@
     }
     .status-bar{
         margin-bottom: 3rem;
+        li{
+            padding-left: 0;
+            &::before{
+                display: none;
+            }
+        }
     }
     .questionnaire-box{
         display: flex;

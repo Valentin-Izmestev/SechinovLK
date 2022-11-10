@@ -69,8 +69,7 @@ $(function(){
         // $("#date").mask("99/99/9999");
         $(".tel").mask("+7 (999) 999-99-99"); 
         $(".snils").mask("999-999-999 99");  
-
-
+ 
 
         $('.file-input').filer({
             limit: null,
@@ -237,7 +236,30 @@ $(function(){
     spoilerBtn.on('click', function(){
         $(this).toggleClass('spoiler__header--active');
         $(this).next('.spoiler__container').slideToggle(200);
+    });
+
+    // стандартный таб
+ 
+    let tabJSControlItem = $('.tab-js__control-item');
+    let tabJSContainer = $('.tab-js__container'); 
+
+    tabJSControlItem.on('click', function(){
+        let tab = $(this).parents('.tab-js');
+        let controlBtn = tab.find('.tab-js__control-item');
+        let container = tab.find('.tab-js__container');
+        controlBtn.removeClass('active');
+        $(this).addClass('active');
+        container.removeClass('active').removeClass('on');
+        let thisContainer = container.eq(controlBtn.index($(this)))
+        thisContainer.addClass('active');
+        setTimeout(function(){
+            thisContainer.addClass('on');
+        }, 200)
+
+
+ 
     })
+
 });
 
 let greatShadow = document.querySelector('.great-shadow');
@@ -488,7 +510,8 @@ function toggleActiveTabElements(arr){
 // навешиваю на все input обязательыне к заполнению событие проверки их заполненности
 if(arrAllInput){
     arrAllInput.forEach(input=>{
-        input.addEventListener('change', function(){  
+        input.addEventListener('keyup', function(){  
+            console.log('click')
             toggleActiveTabElements(checkingFullnessContainerFields(this));
         })
     });
