@@ -3171,6 +3171,25 @@ main.flex-main .inner {
   opacity: 1;
 }
 
+.h-message {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 0 11px -11px var(--black);
+          box-shadow: 0 0 11px -11px var(--black);
+}
+.h-message .h-message__info {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.h-message p {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
 .form-elem {
   position: relative;
   display: block;
@@ -3286,6 +3305,9 @@ main.flex-main .inner {
 }
 .form-elem.form-elem__textarea-box .form-elem__textarea::-webkit-input-placeholder, .form-elem.form-elem__textarea-box .form-elem__textarea::-moz-placeholder, .form-elem.form-elem__textarea-box .form-elem__textarea:-moz-placeholder, .form-elem.form-elem__textarea-box .form-elem__textarea:-ms-input-placeholder, .form-elem.form-elem__textarea-box .form-elem__textarea::placeholder {
   color: transparent;
+}
+.form-elem.form-elem__textarea-box .form-elem__textarea::-moz-placeholder, .form-elem.form-elem__textarea-box .form-elem__textarea:-moz-placeholder {
+  color: red;
 }
 .form-elem.form-elem__textarea-box .form-elem__textarea:not(:-moz-placeholder-shown) ~ span {
   top: -0.9rem;

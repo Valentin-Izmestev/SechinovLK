@@ -107,7 +107,10 @@
              &::placeholder {
                  color: transparent;
              } 
-        
+             &::-moz-placeholder,
+             &:-moz-placeholder{
+                color: red;
+             }
              &:focus, 
              &:not(:placeholder-shown) { 
                  &~span {

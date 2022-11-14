@@ -28,8 +28,9 @@
 					<div class="columns-box columns-box--two-col">
 						<div class="left-col">
 							<label class="form-elem">
+								<!-- form__category-select--no-search -->
 								<select
-									class="form__category-select form-elem__input--validation form__category-select--no-search"
+									class="form__category-select form-elem__input--validation "
 									name="contact-face-relative" required>
 									<option value="">This is a placeholder</option>
 									<option value="f">Тема первая</option>
@@ -38,6 +39,14 @@
 									<option value="gm">Тема четвертая</option>
 								</select>
 								<span>Выберите тему сообщения</span>
+							</label>
+							<label class="form-elem ">
+								<select class="form-elem__input form__category-select form-elem__input--validation" name="gender" id="csefat127" > 
+									<option value="">This is a placeholder</option>
+									<option value="m">Мужской</option> 
+									<option value="w">Женский</option> 
+								</select>
+								<span>Пол<sup>*</sup></span>
 							</label>
 							<label class="form-elem form-elem__textarea-box">
 								<textarea class="form-elem__textarea" name="message"></textarea> 

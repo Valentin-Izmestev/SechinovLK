@@ -2085,6 +2085,26 @@ if(formCategorySelects.length > 0){
     });
 } 
 
+{/* <div class="choices__item choices__placeholder choices__item--selectable" data-item="" data-id="0" data-value="" data-custom-properties="[object Object]" aria-selected="true">This is a placeholder</div> */}
+
+{/* <div class="choices__item choices__item--selectable" data-item="" data-id="0" data-value="m" data-custom-properties="[object Object]" aria-selected="true">Тема вторая</div> */}
+
+// aria-selected="true"
+let choicesSelecValue = document.querySelectorAll('.choices__list--single .choices__item--selectable');
+choicesSelecValue.forEach(item=>{
+    // item.innerHTML = 'This is a placeholder';
+    // item.setAttribute('data-id', 0);
+    // item.setAttribute('data-value', '');
+});
+let choicesSelecValueCommot = document.querySelectorAll('.choices__list--dropdown .choices__item--selectable');
+choicesSelecValueCommot.forEach(item=>{  
+    console.log(item)
+    if(item.getAttribute('aria-selected')){
+        console.log(item.getAttribute('aria-selected'));
+        console.log(item.innerHTML);
+    }
+});
+
 
 // Код работы большого таба с формой - НАЧАЛО
  
