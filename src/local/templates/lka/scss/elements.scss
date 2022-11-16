@@ -2,6 +2,9 @@ main{
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
+.page-title{
+    margin-bottom: 4rem;
+}
 .btn{
     display: block; 
     width: 100%;
@@ -600,18 +603,40 @@ main.flex-main{
     }
 }
 .h-message{
+    display: flex; 
+    align-items: center;
     background-color: var(--white);
     border-radius: 1rem;
     padding: 1.5rem 2rem;
     box-sizing: border-box;
     margin-bottom: 1rem;
     box-shadow: 0 0 11px -11px var(--black);
-    .h-message__info{
-        font-weight: 700;
-        margin-bottom: 1rem;
+    .h-message__icon{ 
+        min-width: 6.5rem;
+        margin-right: 2rem;
+        flex-basis: 6.5rem;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
-    p{
-        margin-bottom: 0;
-        margin-top: 0.5rem;
+    .h-message__content-box{ 
+        flex-grow: 1;
+        .h-message__info{
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+        }
+        p{
+            margin-bottom: 0;
+            margin-top: 0.5rem;
+            font-size: 1.6rem;
+        }
     }
+    
+}
+.text-container{
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 3rem 3rem 2.6rem 3rem;
 }

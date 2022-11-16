@@ -151,7 +151,7 @@
 									</div>
 									<div class="columns-box columns-box--two-col">
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="surname" placeholder="Фамилия" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation" name="surname" placeholder="Фамилия" autocomplete="off" disabled="disabled">
 											<span>Фамилия<sup>*</sup></span>
 										</label> 
 										<label class="form-elem">
@@ -163,7 +163,7 @@
 											<span>Отчество</span>
 										</label> 
 										<label class="form-elem ">
-											<select class="form-elem__input form__category-select form-elem__input--validation" name="gender" id="csefat127" > 
+											<select class="form-elem__input form__category-select form-elem__input--validation" name="gender" id="csefat127" disabled="disabled"> 
 												<option value="">This is a placeholder</option>
 												<option value="m">Мужской</option> 
 												<option value="w">Женский</option> 
@@ -171,7 +171,7 @@
 											<span>Пол<sup>*</sup></span>
 										</label>
 										<label class="form-elem form-elem--date"> 
-											<input type="text" name="date-of-birth" class="form-elem__input flatpickr flatpickr-input form-elem__input--validation" placeholder="Дата публикации" data-id="datetime">
+											<input type="date" name="date-of-birth" class="form-elem__input flatpickr flatpickr-input form-elem__input--validation" placeholder="Дата публикации" data-id="datetime" disabled="disabled">
 											<span>Дата рождения<sup>*</sup></span>
 											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -190,8 +190,42 @@
 										<span>Место рождения<sup>*</sup></span>
 									</label>  
 									<div class="columns-box">
-										<input class="file-input form-elem__input--validation" type="file" multiple="multiple" name="files[]" >
+										<input class="file-input form-elem__input--validation" type="file" multiple="multiple" name="files[]" disabled="disabled">
 									</div>
+									<label class="form-elem-checkbox-full mb2">
+										<input type="checkbox" name="name234" disabled="disabled">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="24" height="24" rx="6" fill="#F2F6F8"/>
+											<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg> 
+										<span class="form-elem-checkbox-full__caption">
+											Лингвистика (очное, бюджет) 
+										</span> 
+									</label>
+									<label class="form-elem-checkbox-full mb3">
+										<input type="checkbox" name="name234">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="24" height="24" rx="6" fill="#F2F6F8"/>
+											<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg> 
+										<span class="form-elem-checkbox-full__caption">
+											Пингвистика (очное, бюджет) 
+										</span> 
+									</label>
+									<label class="form-elem-radio-full mb2">
+										<input type="radio" name="pin">
+										<i></i> 
+										<span class="form-elem-radio-full__caption">
+											Пингвин
+										</span> 
+									</label>
+									<label class="form-elem-radio-full mb3">
+										<input type="radio" name="pin" disabled="disabled"> 
+										<i></i> 
+										<span class="form-elem-radio-full__caption">
+											Витамин
+										</span> 
+									</label>
 									<p class="form-warning">
 										<span class="color-red">Внимание!</span> Прикрепляемый файл должен <b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления заявления о приеме, назовите файл «заявление о приеме»)
 									</p>

@@ -44,6 +44,22 @@
                 font-size: 1.2rem;
              }
          }
+         &[disabled="disabled"]{
+            background-color: var(--lightgrey);
+            cursor: auto;
+            
+         }
+         &[disabled="disabled"] ~ span{
+            background-color: transparent;
+            opacity: 0.5;
+            sup{ 
+                color: inherit;
+            }
+            & ~ svg{
+                opacity: 0.5;
+            }
+         }
+         
     }
     input[type="password"]{
         font-size: 2rem; 
@@ -128,7 +144,24 @@
     .choices { 
         margin-bottom: 0; 
         font-size: 1.6rem;
-
+        &.is-disabled{ 
+            & ~ span{
+                opacity: 0.5;
+                background-color: transparent;
+                sup{ 
+                    color: inherit;
+                }
+             }
+            .choices__inner{
+                background-color: var(--lightgrey); 
+            }
+            .choices__list{
+                cursor: auto;
+            }
+            &::after{
+                opacity: 0.5;
+            }
+         }
         .choices__inner {
             display: inline-block;
             vertical-align: top;
@@ -208,7 +241,15 @@
         display: none;
     }
 }
-
+.file-input{
+    .jFiler-input-dragDrop{
+        cursor: pointer;
+    }
+    &[disabled="disabled"] ~ .jFiler-input-dragDrop{
+        cursor: auto;
+        opacity: 0.5;
+    }
+}
 fieldset{
     background-color: var(--white);
     border-radius: 1rem;
@@ -267,7 +308,7 @@ fieldset{
         path{
             opacity: 1;
         }
-    }
+    } 
     .form-elem-checkbox-full__caption{
         position: relative;
         display: block;
@@ -275,12 +316,67 @@ fieldset{
         box-sizing: border-box;
         overflow: hidden;
     }
+    input[disabled="disabled"] ~ svg{
+        cursor: auto;
+    }
+    input[disabled="disabled"] ~ svg + .form-elem-checkbox-full__caption{
+        opacity: 0.5;
+    }
     &::after{
         content: '';
         display: table;
         width: 100%;
         clear: both;
     } 
+}
+.form-elem-radio-full{
+    display: block;
+    input[type="radio"]{
+        display: none;
+    }
+    i{
+        float: left;
+        position: relative;
+        display: block; 
+        margin-right: 1rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+        background-color: var(--lightgrey);
+        cursor: pointer; 
+        // box-shadow: inset 0 0 0 1px var(--green);
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 35%;
+            height: 35%;
+            border-radius: 50%;
+            background-color: var(--green);
+            transform: translate(-50%, -50%) scale(0);
+            transition: var(--great-transition);
+        }
+    }
+    .form-elem-radio-full__caption{
+        position: relative;
+        display: block;
+        padding-top: 0.2rem;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    input[type="radio"]:checked ~ i{
+        &::before{
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    input[disabled="disabled"] ~ i{
+        cursor: auto;
+        & + .form-elem-radio-full__caption{
+            opacity: 0.5;
+        }
+    }
+    
 }
 .checkbox-list{
     li{
@@ -329,7 +425,7 @@ form{
 }
 .form-questionnaire{
     .form-questionnaire__item{
-        display: none; 
+        // display: none; 
     }
     .spoiler{
         margin-bottom: 2rem;

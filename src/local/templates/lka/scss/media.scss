@@ -192,7 +192,24 @@
             }
         }
     }
-    
+    .h-message{
+        display: block;
+        padding: 2rem;
+        .h-message__icon{
+            max-width: 7.5rem;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .h-message__content-box{  
+            .h-message__info{ 
+                margin-bottom: 1rem;
+            }
+            p{ 
+                margin-top: 1rem; 
+            }
+        }
+    }
 } 
 
 @media screen and (max-width: 430px){
