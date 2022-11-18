@@ -1,7 +1,7 @@
 .form-elem{
     position: relative;
     display: block;
-    span{
+    .form-elem__caption{
         position: absolute;
         top: 50%;
         left: 2.2rem;
@@ -39,7 +39,7 @@
     
          &:focus, 
          &:not(:placeholder-shown) { 
-             &~span {
+             &~.form-elem__caption {
                 top: 0;
                 font-size: 1.2rem;
              }
@@ -49,7 +49,7 @@
             cursor: auto;
             
          }
-         &[disabled="disabled"] ~ span{
+         &[disabled="disabled"] ~ .form-elem__caption{
             background-color: transparent;
             opacity: 0.5;
             sup{ 
@@ -65,7 +65,7 @@
         font-size: 2rem; 
     } 
     &--active{
-        &>span{
+        &>.form-elem__caption{
             top: 0;
         }
     }
@@ -129,13 +129,13 @@
              }
              &:focus, 
              &:not(:placeholder-shown) { 
-                 &~span {
+                 &~.form-elem__caption {
                     top: -0.9rem;
                     font-size: 1.2rem;
                  }
              }
         }
-        span{
+        .form-elem__caption{
             top: 1.8rem;
             transform: translate(0, 0);
         }

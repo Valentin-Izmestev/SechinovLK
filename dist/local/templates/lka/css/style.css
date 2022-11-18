@@ -3243,7 +3243,7 @@ main.flex-main .inner {
   position: relative;
   display: block;
 }
-.form-elem span {
+.form-elem .form-elem__caption {
   position: absolute;
   top: 50%;
   left: 2.2rem;
@@ -3260,7 +3260,7 @@ main.flex-main .inner {
   -o-transition: var(--great-transition);
   transition: var(--great-transition);
 }
-.form-elem span sup {
+.form-elem .form-elem__caption sup {
   position: absolute;
   top: 0;
   color: var(--red);
@@ -3284,15 +3284,15 @@ main.flex-main .inner {
 .form-elem .form-elem__input::-webkit-input-placeholder, .form-elem .form-elem__input::-moz-placeholder, .form-elem .form-elem__input:-moz-placeholder, .form-elem .form-elem__input:-ms-input-placeholder, .form-elem .form-elem__input::placeholder {
   color: transparent;
 }
-.form-elem .form-elem__input:not(:-moz-placeholder-shown) ~ span {
+.form-elem .form-elem__input:not(:-moz-placeholder-shown) ~ .form-elem__caption {
   top: 0;
   font-size: 1.2rem;
 }
-.form-elem .form-elem__input:not(:-ms-input-placeholder) ~ span {
+.form-elem .form-elem__input:not(:-ms-input-placeholder) ~ .form-elem__caption {
   top: 0;
   font-size: 1.2rem;
 }
-.form-elem .form-elem__input:focus ~ span, .form-elem .form-elem__input:not(:placeholder-shown) ~ span {
+.form-elem .form-elem__input:focus ~ .form-elem__caption, .form-elem .form-elem__input:not(:placeholder-shown) ~ .form-elem__caption {
   top: 0;
   font-size: 1.2rem;
 }
@@ -3300,20 +3300,20 @@ main.flex-main .inner {
   background-color: var(--lightgrey);
   cursor: auto;
 }
-.form-elem .form-elem__input[disabled=disabled] ~ span {
+.form-elem .form-elem__input[disabled=disabled] ~ .form-elem__caption {
   background-color: transparent;
   opacity: 0.5;
 }
-.form-elem .form-elem__input[disabled=disabled] ~ span sup {
+.form-elem .form-elem__input[disabled=disabled] ~ .form-elem__caption sup {
   color: inherit;
 }
-.form-elem .form-elem__input[disabled=disabled] ~ span ~ svg {
+.form-elem .form-elem__input[disabled=disabled] ~ .form-elem__caption ~ svg {
   opacity: 0.5;
 }
 .form-elem input[type=password] {
   font-size: 2rem;
 }
-.form-elem--active > span {
+.form-elem--active > .form-elem__caption {
   top: 0;
 }
 .form-elem--password .form-elem__input {
@@ -3372,19 +3372,19 @@ main.flex-main .inner {
 .form-elem.form-elem__textarea-box .form-elem__textarea::-moz-placeholder, .form-elem.form-elem__textarea-box .form-elem__textarea:-moz-placeholder {
   color: red;
 }
-.form-elem.form-elem__textarea-box .form-elem__textarea:not(:-moz-placeholder-shown) ~ span {
+.form-elem.form-elem__textarea-box .form-elem__textarea:not(:-moz-placeholder-shown) ~ .form-elem__caption {
   top: -0.9rem;
   font-size: 1.2rem;
 }
-.form-elem.form-elem__textarea-box .form-elem__textarea:not(:-ms-input-placeholder) ~ span {
+.form-elem.form-elem__textarea-box .form-elem__textarea:not(:-ms-input-placeholder) ~ .form-elem__caption {
   top: -0.9rem;
   font-size: 1.2rem;
 }
-.form-elem.form-elem__textarea-box .form-elem__textarea:focus ~ span, .form-elem.form-elem__textarea-box .form-elem__textarea:not(:placeholder-shown) ~ span {
+.form-elem.form-elem__textarea-box .form-elem__textarea:focus ~ .form-elem__caption, .form-elem.form-elem__textarea-box .form-elem__textarea:not(:placeholder-shown) ~ .form-elem__caption {
   top: -0.9rem;
   font-size: 1.2rem;
 }
-.form-elem.form-elem__textarea-box span {
+.form-elem.form-elem__textarea-box .form-elem__caption {
   top: 1.8rem;
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);

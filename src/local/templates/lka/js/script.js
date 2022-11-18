@@ -2,7 +2,7 @@
 @@include('flatpickr.js');
 @@include('choices.min.js');
 @@include('jquery.maskedinput.js');
-@@include('jquery.filer.min.js');
+@@include('jquery.filer.min.js'); 
 
 $(function(){
     let $eventBtn = $('.events');
@@ -258,8 +258,19 @@ $(function(){
 
 
  
-    })
+    });
 
+    // --------------DADATA------------------------------
+
+    let dadataToken = 'Вашь токен';
+    $("#address").suggestions({
+        token: dadataToken,
+        type: "ADDRESS",
+        /* Вызывается, когда пользователь выбирает одну из подсказок */
+        onSelect: function(suggestion) {
+            console.log(suggestion);
+        }
+    });
 });
 
 let greatShadow = document.querySelector('.great-shadow');
@@ -370,10 +381,10 @@ choicesSelecValue.forEach(item=>{
 });
 let choicesSelecValueCommot = document.querySelectorAll('.choices__list--dropdown .choices__item--selectable');
 choicesSelecValueCommot.forEach(item=>{  
-    console.log(item)
+    // console.log(item)
     if(item.getAttribute('aria-selected')){
-        console.log(item.getAttribute('aria-selected'));
-        console.log(item.innerHTML);
+        // console.log(item.getAttribute('aria-selected'));
+        // console.log(item.innerHTML);
     }
 });
 
@@ -530,8 +541,7 @@ function toggleActiveTabElements(arr){
 // навешиваю на все input обязательыне к заполнению событие проверки их заполненности
 if(arrAllInput){
     arrAllInput.forEach(input=>{
-        input.addEventListener('keyup', function(){  
-            console.log('click')
+        input.addEventListener('keyup', function(){   
             toggleActiveTabElements(checkingFullnessContainerFields(this));
         })
     });
@@ -574,7 +584,7 @@ if(btnAddRelative){
         let submitBtn = document.querySelector('.form-questionnaire .btn[type="submit"]');
  
         submitBtn.setAttribute('disabled', 'disabled');
-        let newRelativeBox = `<div class="relative-box relative-box-${relativeBoxNumber} relative-box-separator"><div class="columns-box columns-box--two-col"><label class="form-elem"><select class="form__category-select form-elem__input--validation" name="contact-face-relative-${relativeBoxNumber}" id="cazwt127" required><option value="">This is a placeholder</option><option value="f">Отец</option><option value="m">Мать</option><option value="gf">Дедушка</option><option value="gm">Бабушка</option></select><span>Кем приходится<sup>*</sup></span></label><label class="form-elem"><input type="text" class="form-elem__input form-elem__input--validation" name="contact-face-full-name-${relativeBoxNumber}" placeholder="Ф.И.О." autocomplete="off"><span>Ф.И.О.<sup>*</sup></span></label><label class="form-elem"><input type="tel" class="form-elem__input form-elem__input--validation" name="contact-face-phone-namber-${relativeBoxNumber}" placeholder="Номер телефона" autocomplete="off"><span>Номер телефона<sup>*</sup></span></label><label class="form-elem"><input type="text" class="form-elem__input form-elem__input--validation" name="contact-face-place-of-work-${relativeBoxNumber}" placeholder="Место работы" autocomplete="off"><span>Место работы<sup>*</sup></span></label></div><label class="form-elem"><input type="tel" class="form-elem__input form-elem__input--validation" name="contact-face-contact-address-${relativeBoxNumber}" placeholder="Контактный адрес" autocomplete="off"><span>Контактный адрес<sup>*</sup></span></label></div>`;
+        let newRelativeBox = `<div class="relative-box relative-box-${relativeBoxNumber} relative-box-separator"><div class="columns-box columns-box--two-col"><label class="form-elem"><select class="form__category-select form-elem__input--validation" name="contact-face-relative-${relativeBoxNumber}" id="cazwt127" required><option value="">This is a placeholder</option><option value="f">Отец</option><option value="m">Мать</option><option value="gf">Дедушка</option><option value="gm">Бабушка</option></select><span class="form-elem__caption">Кем приходится<sup>*</sup></span></label><label class="form-elem"><input type="text" class="form-elem__input form-elem__input--validation" name="contact-face-full-name-${relativeBoxNumber}" placeholder="Ф.И.О." autocomplete="off"><span class="form-elem__caption">Ф.И.О.<sup>*</sup></span></label><label class="form-elem"><input type="tel" class="form-elem__input form-elem__input--validation" name="contact-face-phone-namber-${relativeBoxNumber}" placeholder="Номер телефона" autocomplete="off"><span class="form-elem__caption">Номер телефона<sup>*</sup></span></label><label class="form-elem"><input type="text" class="form-elem__input form-elem__input--validation" name="contact-face-place-of-work-${relativeBoxNumber}" placeholder="Место работы" autocomplete="off"><span class="form-elem__caption">Место работы<sup>*</sup></span></label></div><label class="form-elem"><input type="tel" class="form-elem__input form-elem__input--validation" name="contact-face-contact-address-${relativeBoxNumber}" placeholder="Контактный адрес" autocomplete="off"><span class="form-elem__caption">Контактный адрес<sup>*</sup></span></label></div>`;
 
         relativeBox.insertAdjacentHTML('afterend', newRelativeBox);
         
