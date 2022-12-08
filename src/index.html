@@ -9,87 +9,112 @@
 
 	<!--   Cascading Style Sheets-->
 	<!-- <link rel="stylesheet" href="css/style.css">  -->
-	<link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css"
+		rel="stylesheet" />
 	<link rel="stylesheet" href="./local/templates/lka/css/style.min.css">
- 
+
 </head>
 
-<body> 
+<body>
 	@@include('_header.html')
 	<main class="main">
 		<section class="questionnaire-section">
 			<div class="inner">
 				<h1 class="h3 page-title">Для подачи заявления заполните анкету с основными данными</h1>
 				<div class="questionnaire-box">
-					<div class="left-col"  >
+					<div class="left-col">
 						<div class="status-bar">
 							<ul class="status-list">
 								<li>
 									<a href="#form-tab-1" class="status-list__item current-item">
 										<span class="status-marker">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</span>
-										<span >Основные данные</span>
-									</a> 
+										<span>Основные данные</span>
+									</a>
 								</li>
 								<li>
 									<a href="#form-tab-2" class="status-list__item disabled">
 										<span class="status-marker">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</span>
-										<span >Данные удостоверяющие личность</span>
-									</a> 
-								</li> 
+										<span>Данные удостоверяющие личность</span>
+									</a>
+								</li>
 								<li>
 									<a href="#form-tab-3" class="status-list__item disabled">
 										<span class="status-marker">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</span>
-										<span >СНИЛС</span>
-									</a> 
-								</li> 
+										<span>СНИЛС</span>
+									</a>
+								</li>
 								<li>
-									<a href="#form-tab-4" class="status-list__item disabled" >
+									<a href="#form-tab-4" class="status-list__item disabled">
 										<span class="status-marker">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</span>
-										<span >Данные об образовании</span>
-									</a> 
-								</li>  
+										<span>Данные об образовании</span>
+									</a>
+								</li>
 								<li>
 									<a href="#form-tab-5" class="status-list__item disabled">
 										<span class="status-marker">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</span>
-										<span >Конкурсные группы</span>
-									</a> 
+										<span>Конкурсные группы</span>
+									</a>
 								</li>
 								<li>
 									<a href="#form-tab-6" class="status-list__item disabled">
 										<span class="status-marker">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+													stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</span>
-										<span >Контактные лица</span>
-									</a> 
-								</li>   
+										<span>Контактные лица</span>
+									</a>
+								</li>
 							</ul>
 						</div>
 						<div class="help-information">
@@ -99,28 +124,40 @@
 							<ul class="help-information__status-list">
 								<li>
 									<div class="status-marker status-marker--filled">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+												stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
 									</div>
 									Блок заполнен
 								</li>
 								<li>
 									<div class="status-marker">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+												stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
 									</div>
 									Блок не заполнен
 								</li>
 								<li>
 									<div class="status-marker status-marker--optional">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10.75 6.5L7.08331 10L5.25 8.25"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.75 6.5L7.08331 10L5.25 8.25" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+											<path
+												d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+												stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
 									</div>
 									Необязательный блок
 								</li>
@@ -130,351 +167,461 @@
 							</p>
 						</div>
 					</div>
-					<div class="right-col"> 
-						<form  class="form-questionnaire">
+					<div class="right-col">
+						<form class="form-questionnaire">
 							<div id="form-tab-1" class="form-questionnaire__item" style="display: block;">
 								<fieldset>
 									<legend>Основные данные</legend>
 									<div class="explanation">
 										<div class="explanation__icon">
-											<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity="0.2" d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" fill="#447BF8"/>
-												<path d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" stroke="#447BF8" stroke-width="2" stroke-miterlimit="10"/>
-												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z" fill="#447BF8"/>
-											</svg> 
+											<svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													fill="#447BF8" />
+												<path
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													stroke="#447BF8" stroke-width="2" stroke-miterlimit="10" />
+												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z"
+													fill="#447BF8" />
+											</svg>
 										</div>
 										<div class="explanation__text">
 											<p>
-												Прикрепите фотографию как на паспорт, чтобы лицо полностью попадало в фокус и было изображено в анфас
-											</p> 
-										</div> 
-									</div> 
-									<label class="form-elem"> 
-										<input class="form-elem__input form-elem__input--validation" id="address" name="address" type="text" placeholder="адрес" >
+												Прикрепите фотографию как на паспорт, чтобы лицо полностью попадало в
+												фокус и было изображено в анфас
+											</p>
+										</div>
+									</div>
+									<label class="form-elem">
+										<input class="form-elem__input form-elem__input--validation" id="address"
+											name="address" type="text" placeholder="адрес">
 										<span class="form-elem__caption">Адрес<sup>*</sup></span>
-									</label> 
+									</label>
 									<div class="columns-box columns-box--two-col">
-										 
+
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="surname" placeholder="Фамилия" autocomplete="off" disabled="disabled"> 
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="surname" placeholder="Фамилия" autocomplete="off">
 											<span class="form-elem__caption">Фамилия<sup>*</sup></span>
-										</label> 
+										</label>
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="name" placeholder="Имя" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="name" placeholder="Имя" autocomplete="off">
 											<span class="form-elem__caption">Имя<sup>*</sup></span>
-										</label> 
+										</label>
 										<label class="form-elem">
-											<input type="text" class="form-elem__input" name="patronymic" placeholder="Отчество" autocomplete="off">
+											<input type="text" class="form-elem__input" name="patronymic"
+												placeholder="Отчество" autocomplete="off">
 											<span class="form-elem__caption">Отчество</span>
-										</label> 
+										</label>
 										<label class="form-elem ">
-											<select class="form-elem__input form__category-select form-elem__input--validation" name="gender" id="csefat127" disabled="disabled"> 
+											<select
+												class="form-elem__input form__category-select form-elem__input--validation"
+												name="gender" id="csefat127">
 												<option value="">This is a placeholder</option>
-												<option value="m">Мужской</option> 
-												<option value="w">Женский</option> 
+												<option value="m">Мужской</option>
+												<option value="w">Женский</option>
 											</select>
 											<span class="form-elem__caption">Пол<sup>*</sup></span>
 										</label>
-										<label class="form-elem form-elem--date"> 
-											<input type="date" name="date-of-birth" class="form-elem__input flatpickr flatpickr-input form-elem__input--validation" placeholder="Дата публикации" data-id="datetime" disabled="disabled">
+										<label class="form-elem form-elem--date">
+											<input type="date" name="date-of-birth"
+												class="form-elem__input flatpickr flatpickr-input form-elem__input--validation"
+												placeholder="Дата публикации" data-id="datetime">
 											<span class="form-elem__caption">Дата рождения<sup>*</sup></span>
-											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M13.75 1.875V4.375" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M6.25 1.875V4.375" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M3.125 6.875H16.875" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z"
+													stroke="#7482A2" stroke-width="1.5" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M13.75 1.875V4.375" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M6.25 1.875V4.375" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M3.125 6.875H16.875" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</label>
 										<label class="form-elem">
-											<input type="tel" class="form-elem__input tel form-elem__input--validation" name="tel" placeholder="Телефон" autocomplete="off">
+											<input type="tel" class="form-elem__input tel form-elem__input--validation"
+												name="tel" placeholder="Телефон" autocomplete="off">
 											<span class="form-elem__caption">Телефон<sup>*</sup></span>
-										</label> 
+										</label>
 									</div>
 									<label class="form-elem">
-										<input type="text" class="form-elem__input form-elem__input--validation" name="place-of-birth" placeholder="Место рождения" autocomplete="off">
+										<input type="text" class="form-elem__input form-elem__input--validation"
+											name="place-of-birth" placeholder="Место рождения" autocomplete="off">
 										<span class="form-elem__caption">Место рождения<sup>*</sup></span>
-									</label>  
+									</label>
 									<div class="columns-box">
-										<input class="file-input form-elem__input--validation" type="file" multiple="multiple" name="files[]" disabled="disabled">
+										<input class="file-input form-elem__input--validation" type="file"
+											multiple="multiple" name="files[]" disabled="disabled">
 									</div>
 									<label class="form-elem-checkbox-full mb2">
 										<input type="checkbox" name="name234" disabled="disabled">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect width="24" height="24" rx="6" fill="#F2F6F8"/>
-											<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="24" height="24" rx="6" fill="#F2F6F8" />
+											<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
 										<span class="form-elem-checkbox-full__caption">
-											Лингвистика (очное, бюджет) 
-										</span> 
+											Лингвистика (очное, бюджет)
+										</span>
 									</label>
 									<label class="form-elem-checkbox-full mb3">
 										<input type="checkbox" name="name234">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect width="24" height="24" rx="6" fill="#F2F6F8"/>
-											<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect width="24" height="24" rx="6" fill="#F2F6F8" />
+											<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
 										<span class="form-elem-checkbox-full__caption">
-											Пингвистика (очное, бюджет) 
-										</span> 
+											Пингвистика (очное, бюджет)
+										</span>
 									</label>
 									<label class="form-elem-radio-full mb2">
 										<input type="radio" name="pin">
-										<i></i> 
+										<i></i>
 										<span class="form-elem-radio-full__caption">
 											Пингвин
-										</span> 
+										</span>
 									</label>
 									<label class="form-elem-radio-full mb3">
-										<input type="radio" name="pin" disabled="disabled"> 
-										<i></i> 
+										<input type="radio" name="pin" disabled="disabled">
+										<i></i>
 										<span class="form-elem-radio-full__caption">
 											Витамин
-										</span> 
+										</span>
 									</label>
 									<p class="form-warning">
-										<span class="color-red">Внимание!</span> Прикрепляемый файл должен <b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления заявления о приеме, назовите файл «заявление о приеме»)
+										<span class="color-red">Внимание!</span> Прикрепляемый файл должен
+										<b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления
+										заявления о приеме, назовите файл «заявление о приеме»)
 									</p>
 								</fieldset>
-								<div class="form-questionnaire__btn-box "> 
-									<a href="#form-tab-2" class="btn btn--blue btn-next disabled">Следующий шаг</a> 
-								</div> 
+								<div class="form-questionnaire__btn-box ">
+									<a href="#form-tab-2" class="btn btn--blue btn-next disabled">Следующий шаг</a>
+								</div>
 								<span class="form-questionnaire__condition">
 									Заполните все поля перед тем как приступить к следующему шагу
 								</span>
 								<br>
-								<button type="button" class="btn btn--blue btn--show-modal" data-open-modal="modal-text">Открыть модалку Текст</button>
+								<button type="button" class="btn btn--blue btn--show-modal"
+									data-open-modal="modal-text">Открыть модалку Текст</button>
 								<br>
-								<button type="button" class="btn btn--blue btn--show-modal" data-open-modal="modal-text-2">Открыть модалку Текст-2</button>
+								<button type="button" class="btn btn--blue btn--show-modal"
+									data-open-modal="modal-text-2">Открыть модалку Текст-2</button>
 								<br>
-								<button type="button" class="btn btn--blue btn--show-modal" data-open-modal="modal-message">Открыть модалку успешной отправки формы</button>
+								<button type="button" class="btn btn--blue btn--show-modal"
+									data-open-modal="modal-message">Открыть модалку успешной отправки формы</button>
 							</div>
-							<div id="form-tab-2"  class="form-questionnaire__item">
+							<div id="form-tab-2" class="form-questionnaire__item">
 								<fieldset>
 									<legend>Данные удостоверяющие личность</legend>
 									<div class="explanation">
 										<div class="explanation__icon">
-											<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity="0.2" d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" fill="#447BF8"/>
-												<path d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" stroke="#447BF8" stroke-width="2" stroke-miterlimit="10"/>
-												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z" fill="#447BF8"/>
-											</svg> 
+											<svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													fill="#447BF8" />
+												<path
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													stroke="#447BF8" stroke-width="2" stroke-miterlimit="10" />
+												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z"
+													fill="#447BF8" />
+											</svg>
 										</div>
 										<div class="explanation__text">
 											<p>
 												Выберите тип документа.
-											</p> 
+											</p>
 											<p>
-												Прикрепите скан документа (если это паспорт, то разворот основной страницы, и страницу с пропиской. Внимание! Все символы должны быть четко видны, документ должен быть в хорошем качестве).
-											</p> 
-										</div>  
+												Прикрепите скан документа (если это паспорт, то разворот основной
+												страницы, и страницу с пропиской. Внимание! Все символы должны быть
+												четко видны, документ должен быть в хорошем качестве).
+											</p>
+										</div>
 									</div>
 									<div class="columns-box columns-box--two-col">
 										<label class="form-elem ">
-											<select class="form__category-select form-elem__input--validation" name="pasport" id="cat189" required> 
+											<select class="form__category-select form-elem__input--validation"
+												name="pasport" id="cat189" required>
 												<option value="">This is a placeholder</option>
-												<option value="m">Паспорт гражданина РФ</option> 
-												<option value="w">Паспорт гражданина другого государства</option> 
+												<option value="m">Паспорт гражданина РФ</option>
+												<option value="w">Паспорт гражданина другого государства</option>
 											</select>
 											<span class="form-elem__caption">Вид документа<sup>*</sup></span>
 										</label>
 										<label class="form-elem">
-											<select class="form__category-select form-elem__input--validation" name="country" id="cat12755" required> 
+											<select class="form__category-select form-elem__input--validation"
+												name="country" id="cat12755" required>
 												<option value="">This is a placeholder</option>
-												<option value="m">Российская Федерация</option> 
-												<option value="w">Австрия</option> 
-												<option value="w">Белоруссия</option> 
-												<option value="w">Венгрия</option> 
-												<option value="w">Грузия</option> 
-												<option value="w">Дания</option> 
-												<option value="w">Египет</option>   
+												<option value="m">Российская Федерация</option>
+												<option value="w">Австрия</option>
+												<option value="w">Белоруссия</option>
+												<option value="w">Венгрия</option>
+												<option value="w">Грузия</option>
+												<option value="w">Дания</option>
+												<option value="w">Египет</option>
 											</select>
 											<span class="form-elem__caption">Гражданство<sup>*</sup></span>
 										</label>
 									</div>
 									<div class="columns-box columns-box--three-col">
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="pasport-series" placeholder="Серия" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="pasport-series" placeholder="Серия" autocomplete="off">
 											<span class="form-elem__caption">Серия<sup>*</sup></span>
-										</label> 
+										</label>
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="pasport-number" placeholder="Номер" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="pasport-number" placeholder="Номер" autocomplete="off">
 											<span class="form-elem__caption">Номер<sup>*</sup></span>
 										</label>
-										<label class="form-elem form-elem--date"> 
-											<input type="text" name="pasport-date-of-issue" class="form-elem__input flatpickr flatpickr-input form-elem__input--validation" placeholder="Дата публикации" data-id="datetime">
+										<label class="form-elem form-elem--date">
+											<input type="text" name="pasport-date-of-issue"
+												class="form-elem__input flatpickr flatpickr-input form-elem__input--validation"
+												placeholder="Дата публикации" data-id="datetime">
 											<span class="form-elem__caption">Дата выдачи<sup>*</sup></span>
-											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M13.75 1.875V4.375" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M6.25 1.875V4.375" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M3.125 6.875H16.875" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z"
+													stroke="#7482A2" stroke-width="1.5" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M13.75 1.875V4.375" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M6.25 1.875V4.375" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M3.125 6.875H16.875" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</label>
 									</div>
 									<div class="columns-box columns-box--three-col">
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="division-code" placeholder="Код подразделения" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="division-code" placeholder="Код подразделения" autocomplete="off">
 											<span class="form-elem__caption">Код подразделения<sup>*</sup></span>
 										</label>
 										<label class="form-elem columns-box--col-2-3">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="issued-by-whom" placeholder="Кем выдан" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="issued-by-whom" placeholder="Кем выдан" autocomplete="off">
 											<span class="form-elem__caption">Кем выдан<sup>*</sup></span>
 										</label>
 									</div>
 									<label class="form-elem">
-										<input type="text" class="form-elem__input form-elem__input--validation" name="address-registration" placeholder="Адрес регистрации" autocomplete="off">
+										<input type="text" class="form-elem__input form-elem__input--validation"
+											name="address-registration" placeholder="Адрес регистрации"
+											autocomplete="off">
 										<span class="form-elem__caption">Адрес регистрации<sup>*</sup></span>
 									</label>
 									drag-and-drop элемент разместить здесь
 									<p class="form-warning">
-										<span class="color-red">Внимание!</span> Прикрепляемый файл должен <b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления заявления о приеме, назовите файл «заявление о приеме»)
+										<span class="color-red">Внимание!</span> Прикрепляемый файл должен
+										<b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления
+										заявления о приеме, назовите файл «заявление о приеме»)
 									</p>
 								</fieldset>
 								<div class="form-questionnaire__btn-box form-questionnaire__btn-box--two-btn">
 									<a href="#form-tab-1" class="btn btn--blue">Предыдущий шаг</a>
-									<a href="#form-tab-3" class="btn btn--blue btn-next disabled" >Следующий шаг</a> 
+									<a href="#form-tab-3" class="btn btn--blue btn-next disabled">Следующий шаг</a>
 								</div>
 								<span class="form-questionnaire__condition">
 									Заполните все поля перед тем как приступить к следующему шагу
 								</span>
 							</div>
-							<div id="form-tab-3"  class="form-questionnaire__item">
+							<div id="form-tab-3" class="form-questionnaire__item">
 								<fieldset>
-									<legend>СНИЛС</legend> 
+									<legend>СНИЛС</legend>
 									<label class="form-elem">
-										<input type="text" class="form-elem__input form-elem__input--validation" name="snils" placeholder="СНИЛС" autocomplete="off">
+										<input type="text" class="form-elem__input form-elem__input--validation"
+											name="snils" placeholder="СНИЛС" autocomplete="off">
 										<span class="form-elem__caption">СНИЛС<sup>*</sup></span>
 									</label>
 									drag-and-drop элемент разместить здесь
 									<p class="form-warning">
-										<span class="color-red">Внимание!</span> Прикрепляемый файл должен <b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления заявления о приеме, назовите файл «заявление о приеме»)
+										<span class="color-red">Внимание!</span> Прикрепляемый файл должен
+										<b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления
+										заявления о приеме, назовите файл «заявление о приеме»)
 									</p>
 								</fieldset>
 								<div class="form-questionnaire__btn-box form-questionnaire__btn-box--two-btn">
 									<a href="#form-tab-2" class="btn btn--blue">Предыдущий шаг</a>
-									<a href="#form-tab-4" class="btn btn--blue btn-next disabled">Следующий шаг</a> 
+									<a href="#form-tab-4" class="btn btn--blue btn-next disabled">Следующий шаг</a>
 								</div>
 								<span class="form-questionnaire__condition">
 									Заполните все поля перед тем как приступить к следующему шагу
 								</span>
 							</div>
-							<div id="form-tab-4"  class="form-questionnaire__item" >
+							<div id="form-tab-4" class="form-questionnaire__item">
 								<fieldset>
 									<legend>Данные об образовании</legend>
 									<div class="explanation">
 										<div class="explanation__icon">
-											<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity="0.2" d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" fill="#447BF8"/>
-												<path d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" stroke="#447BF8" stroke-width="2" stroke-miterlimit="10"/>
-												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z" fill="#447BF8"/>
-											</svg> 
+											<svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													fill="#447BF8" />
+												<path
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													stroke="#447BF8" stroke-width="2" stroke-miterlimit="10" />
+												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z"
+													fill="#447BF8" />
+											</svg>
 										</div>
 										<div class="explanation__text">
 											<p>
-												Если Вы поступаете по направлениям подготовки «Бакалавриат», «Специалитет», «Среднее профессиональное образование», выберите аттестат за 11 класс.
-											</p> 
+												Если Вы поступаете по направлениям подготовки «Бакалавриат»,
+												«Специалитет», «Среднее профессиональное образование», выберите аттестат
+												за 11 класс.
+											</p>
 											<p>
-												Если Вы поступаете по направлениям подготовки «Магистратура», «Ординатура», «Аспирантура», выберите Документ о высшем образовании.
-											</p> 
-											
+												Если Вы поступаете по направлениям подготовки «Магистратура»,
+												«Ординатура», «Аспирантура», выберите Документ о высшем образовании.
+											</p>
+
 											<ul>
 												<li>
-													Выберите из списка предложенных документов необходимый документ об образовании (Например, в случае аттестата за 11 класс нового образца поле «серия» остается незаполненным, так как аттестат имеет только номер. Если у Вас аттестат за 11 класс старого образца- укажите серию в соответствующем поле);
+													Выберите из списка предложенных документов необходимый документ об
+													образовании (Например, в случае аттестата за 11 класс нового образца
+													поле «серия» остается незаполненным, так как аттестат имеет только
+													номер. Если у Вас аттестат за 11 класс старого образца- укажите
+													серию в соответствующем поле);
 												</li>
 												<li>
-													В поле «Кем выдан» укажите наименование учебной организации в соответствии с тем, как указано в аттестате;
+													В поле «Кем выдан» укажите наименование учебной организации в
+													соответствии с тем, как указано в аттестате;
 												</li>
 												<li>
-													Заполните остальные поля «дата выдачи», «Страна, где выдан», «Регион, где выдан»;
+													Заполните остальные поля «дата выдачи», «Страна, где выдан»,
+													«Регион, где выдан»;
 												</li>
 												<li>
-													В поле «Владею иностранным языком» укажите основной иностранный язык, который вы изучали;
+													В поле «Владею иностранным языком» укажите основной иностранный
+													язык, который вы изучали;
 												</li>
 												<li>
-													<b>Прикрепите ВСЕ страницы документа, а именно страницу аттестата с печатью и приложение с ДВУХ сторон!</b>;
+													<b>Прикрепите ВСЕ страницы документа, а именно страницу аттестата с
+														печатью и приложение с ДВУХ сторон!</b>;
 												</li>
 												<li>
-													Средний балл высчитывается путем сложения всех оценок включая практику и государственную аттестацию и деления на их количество. Полученное число необходимо округлить до сотых.
-												</li> 
-											</ul> 
-										</div>  
+													Средний балл высчитывается путем сложения всех оценок включая
+													практику и государственную аттестацию и деления на их количество.
+													Полученное число необходимо округлить до сотых.
+												</li>
+											</ul>
+										</div>
 									</div>
 									<label class="form-elem">
-										<select class="form__category-select form-elem__input--validation" name="attestat" id="cat1" autocomplete="off"> 
+										<select class="form__category-select form-elem__input--validation"
+											name="attestat" id="cat1" autocomplete="off">
 											<option value="">This is a placeholder</option>
-											<option value="a">Аттестат о среднем общем образовании РФ</option> 
-											<option value="b">Аттестат о высшем образовании РФ</option> 
-											<option value="c">Аттестат о среднем общем образовании (иностранного государства)</option> 
-											<option value="d">Аттестат о высшем образовании (иностранного государства)</option>
+											<option value="a">Аттестат о среднем общем образовании РФ</option>
+											<option value="b">Аттестат о высшем образовании РФ</option>
+											<option value="c">Аттестат о среднем общем образовании (иностранного
+												государства)</option>
+											<option value="d">Аттестат о высшем образовании (иностранного государства)
+											</option>
 										</select>
 										<span class="form-elem__caption">Тип документа<sup>*</sup></span>
 									</label>
 									<label class="form-elem">
-										<input type="text" class="form-elem__input form-elem__input--validation" name="attestat-issued-by-whom" placeholder="Кем выдан" autocomplete="off">
+										<input type="text" class="form-elem__input form-elem__input--validation"
+											name="attestat-issued-by-whom" placeholder="Кем выдан" autocomplete="off">
 										<span class="form-elem__caption">Кем выдан<sup>*</sup></span>
 									</label>
 									<div class="columns-box columns-box--three-col">
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="attestat-series" placeholder="Серия" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="attestat-series" placeholder="Серия" autocomplete="off">
 											<span class="form-elem__caption">Серия<sup>*</sup></span>
 										</label>
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="attestat-name" placeholder="Номер" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="attestat-name" placeholder="Номер" autocomplete="off">
 											<span class="form-elem__caption">Номер<sup>*</sup></span>
 										</label>
-										<label class="form-elem form-elem--date"> 
-											<input type="text" name="attestat-date-issue " class="form-elem__input flatpickr flatpickr-input form-elem__input--validation" placeholder="Дата выдачи" data-id="datetime">
+										<label class="form-elem form-elem--date">
+											<input type="text" name="attestat-date-issue "
+												class="form-elem__input flatpickr flatpickr-input form-elem__input--validation"
+												placeholder="Дата выдачи" data-id="datetime">
 											<span class="form-elem__caption">Дата выдачи<sup>*</sup></span>
-											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M13.75 1.875V4.375" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M6.25 1.875V4.375" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M3.125 6.875H16.875" stroke="#7482A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z"
+													stroke="#7482A2" stroke-width="1.5" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M13.75 1.875V4.375" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M6.25 1.875V4.375" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M3.125 6.875H16.875" stroke="#7482A2" stroke-width="1.5"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
 										</label>
 										<label class="form-elem">
-											<input type="text" class="form-elem__input form-elem__input--validation" name="attestat-middle-ball" placeholder="Средний бал" autocomplete="off">
+											<input type="text" class="form-elem__input form-elem__input--validation"
+												name="attestat-middle-ball" placeholder="Средний бал"
+												autocomplete="off">
 											<span class="form-elem__caption">Средний бал<sup>*</sup></span>
 										</label>
 										<label class="form-elem">
-											<select class="form__category-select form-elem__input--validation" name="attestat-courty" id="czscat127" required> 
+											<select class="form__category-select form-elem__input--validation"
+												name="attestat-courty" id="czscat127" required>
 												<option value="">This is a placeholder</option>
-												<option value="a">Австралия</option>  
-												<option value="b">Бразилия</option>  
-												<option value="c">Венесуэла</option>  
-												<option value="rf">Российская Федерация</option>  
+												<option value="a">Австралия</option>
+												<option value="b">Бразилия</option>
+												<option value="c">Венесуэла</option>
+												<option value="rf">Российская Федерация</option>
 											</select>
 											<span class="form-elem__caption">Страна выдачи<sup>*</sup></span>
 										</label>
 										<label class="form-elem">
-											<select class="form__category-select form-elem__input--validation" name="attestat-name" id="catse127" required> 
+											<select class="form__category-select form-elem__input--validation"
+												name="attestat-name" id="catse127" required>
 												<option value="">This is a placeholder</option>
-												<option value="a">Английский</option>  
-												<option value="b">Немецкий</option>  
-												<option value="f">Французский</option>  
-												<option value="i">Испанский</option>  
-												<option value="r">Русский</option>  
+												<option value="a">Английский</option>
+												<option value="b">Немецкий</option>
+												<option value="f">Французский</option>
+												<option value="i">Испанский</option>
+												<option value="r">Русский</option>
 											</select>
 											<span class="form-elem__caption">Язык<sup>*</sup></span>
 										</label>
 									</div>
 									drag-and-drop элемент разместить здесь
 									<p class="form-warning">
-										<span class="color-red">Внимание!</span> Прикрепляемый файл должен <b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления заявления о приеме, назовите файл «заявление о приеме»)
-									</p> 
+										<span class="color-red">Внимание!</span> Прикрепляемый файл должен
+										<b>ОБЯЗАТЕЛЬНО</b> иметь название документа (например, в случае прикрепления
+										заявления о приеме, назовите файл «заявление о приеме»)
+									</p>
 								</fieldset>
 								<div class="form-questionnaire__btn-box form-questionnaire__btn-box--two-btn">
 									<a href="#form-tab-3" class="btn btn--blue">Предыдущий шаг</a>
-									<a href="#form-tab-5" class="btn btn--blue btn-next disabled">Следующий шаг</a> 
+									<a href="#form-tab-5" class="btn btn--blue btn-next disabled">Следующий шаг</a>
 								</div>
 								<span class="form-questionnaire__condition">
 									Заполните все поля перед тем как приступить к следующему шагу
 								</span>
 							</div>
-							<div id="form-tab-5"  class="form-questionnaire__item">
+							<div id="form-tab-5" class="form-questionnaire__item">
 								<fieldset>
 									<legend>
 										Контактные лица
@@ -482,135 +629,180 @@
 									<div class="spoiler">
 										<button type="button" class="spoiler__header">
 											Бакалавриат
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M13 6L8 11L3 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg> 
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M13 6L8 11L3 6" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
 										</button>
 										<div class="spoiler__container">
 											<ul class="checkbox-list">
 												<li>
 													<label class="form-elem-checkbox-full">
-														<input class="form-elem__input--validation-group" type="checkbox" name="name234">
-														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<rect width="24" height="24" rx="6" fill="#F2F6F8"/>
-															<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-														</svg> 
+														<input class="form-elem__input--validation-group"
+															type="checkbox" name="name234">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect width="24" height="24" rx="6" fill="#F2F6F8" />
+															<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002"
+																stroke="#1BCCAC" stroke-width="2" stroke-linecap="round"
+																stroke-linejoin="round" />
+														</svg>
 														<span class="form-elem-checkbox-full__caption">
-															Лингвистика (очное, бюджет) 
-														</span> 
+															Лингвистика (очное, бюджет)
+														</span>
 													</label>
 												</li>
 												<li>
 													<label class="form-elem-checkbox-full">
-														<input class="form-elem__input--validation-group" type="checkbox" name="name2344">
-														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<rect width="24" height="24" rx="6" fill="#F2F6F8"/>
-															<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-														</svg> 
+														<input class="form-elem__input--validation-group"
+															type="checkbox" name="name2344">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect width="24" height="24" rx="6" fill="#F2F6F8" />
+															<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002"
+																stroke="#1BCCAC" stroke-width="2" stroke-linecap="round"
+																stroke-linejoin="round" />
+														</svg>
 														<span class="form-elem-checkbox-full__caption">
 															Лингвистика_очное_бюджет_ГВД
-														</span> 
+														</span>
 													</label>
 												</li>
 												<li>
 													<label class="form-elem-checkbox-full">
-														<input class="form-elem__input--validation-group" type="checkbox" name="name4">
-														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<rect width="24" height="24" rx="6" fill="#F2F6F8"/>
-															<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-														</svg> 
+														<input class="form-elem__input--validation-group"
+															type="checkbox" name="name4">
+														<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect width="24" height="24" rx="6" fill="#F2F6F8" />
+															<path d="M16.125 9.37524L10.875 14.625L8.25 12.0002"
+																stroke="#1BCCAC" stroke-width="2" stroke-linecap="round"
+																stroke-linejoin="round" />
+														</svg>
 														<span class="form-elem-checkbox-full__caption">
 															Лингвистика_очное_бюджет_ГВД
-														</span> 
+														</span>
 													</label>
 												</li>
 											</ul>
-											
+
 										</div>
-									</div> 
+									</div>
 								</fieldset>
-								<div class="form-questionnaire__btn-box form-questionnaire__btn-box--two-btn"> 
-									<a href="#form-tab-4" class="btn btn--blue ">Предыдущий шаг</a> 
-									<button type="submit" class="btn btn--blue btn--with-elem btn-next" disabled="disabled" >
+								<div class="form-questionnaire__btn-box form-questionnaire__btn-box--two-btn">
+									<a href="#form-tab-4" class="btn btn--blue ">Предыдущий шаг</a>
+									<button type="submit" class="btn btn--blue btn--with-elem btn-next"
+										disabled="disabled">
 										<span>Завершить</span>
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.5 8H13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M9 3.5L13.5 8L9 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
-									</button> 
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.5 8H13.5" stroke="white" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M9 3.5L13.5 8L9 12.5" stroke="white" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
 								</div>
 								<span class="form-questionnaire__condition">
 									Заполните все поля перед тем как приступить к следующему шагу
 								</span>
 							</div>
-							<div id="form-tab-6"  class="form-questionnaire__item">
+							<div id="form-tab-6" class="form-questionnaire__item">
 								<fieldset>
 									<legend>
 										Контактные лица
 									</legend>
 									<div class="explanation">
 										<div class="explanation__icon">
-											<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity="0.2" d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" fill="#447BF8"/>
-												<path d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z" stroke="#447BF8" stroke-width="2" stroke-miterlimit="10"/>
-												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												<path d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z" fill="#447BF8"/>
-											</svg> 
+											<svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path opacity="0.2"
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													fill="#447BF8" />
+												<path
+													d="M22 38.5C31.1127 38.5 38.5 31.1127 38.5 22C38.5 12.8873 31.1127 5.5 22 5.5C12.8873 5.5 5.5 12.8873 5.5 22C5.5 31.1127 12.8873 38.5 22 38.5Z"
+													stroke="#447BF8" stroke-width="2" stroke-miterlimit="10" />
+												<path d="M22 13.75V23.375" stroke="#447BF8" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M21.9375 29.5C22.4898 29.5 22.9375 29.0523 22.9375 28.5C22.9375 27.9477 22.4898 27.5 21.9375 27.5C21.3852 27.5 20.9375 27.9477 20.9375 28.5C20.9375 29.0523 21.3852 29.5 21.9375 29.5Z"
+													fill="#447BF8" />
+											</svg>
 										</div>
 										<div class="explanation__text">
 											<p>
-												Заполните поля, указав хотя бы одно контактное лицо, с которым мы сможем связаться в случае, если нам не удается связаться с Вами.
-											</p> 
-										</div> 
+												Заполните поля, указав хотя бы одно контактное лицо, с которым мы сможем
+												связаться в случае, если нам не удается связаться с Вами.
+											</p>
+										</div>
 									</div>
 									<div class="relative-box">
 										<div class="columns-box columns-box--two-col">
 											<label class="form-elem">
-												<select class="form__category-select form-elem__input--validation form__category-select--no-search" name="contact-face-relative" required> 
+												<select
+													class="form__category-select form-elem__input--validation form__category-select--no-search"
+													name="contact-face-relative" required>
 													<option value="">This is a placeholder</option>
-													<option value="f">Отец</option> 
-													<option value="m">Мать</option> 
-													<option value="gf">Дедушка</option> 
-													<option value="gm">Бабушка</option> 
+													<option value="f">Отец</option>
+													<option value="m">Мать</option>
+													<option value="gf">Дедушка</option>
+													<option value="gm">Бабушка</option>
 												</select>
 												<span class="form-elem__caption">Кем приходится<sup>*</sup></span>
-											</label> 
+											</label>
 											<label class="form-elem">
-												<input type="text" class="form-elem__input form-elem__input--validation" name="contact-face-full-name" placeholder="Ф.И.О." autocomplete="off">
+												<input type="text" class="form-elem__input form-elem__input--validation"
+													name="contact-face-full-name" placeholder="Ф.И.О."
+													autocomplete="off">
 												<span class="form-elem__caption">Ф.И.О.<sup>*</sup></span>
-											</label> 
+											</label>
 											<label class="form-elem">
-												<input type="tel" class="form-elem__input tel form-elem__input--validation" name="contact-face-phone-namber" placeholder="Номер телефона" autocomplete="off">
+												<input type="tel"
+													class="form-elem__input tel form-elem__input--validation"
+													name="contact-face-phone-namber" placeholder="Номер телефона"
+													autocomplete="off">
 												<span class="form-elem__caption">Номер телефона<sup>*</sup></span>
-											</label> 
+											</label>
 											<label class="form-elem">
-												<input type="text" class="form-elem__input form-elem__input--validation" name="contact-face-place-of-work" placeholder="Место работы" autocomplete="off">
+												<input type="text" class="form-elem__input form-elem__input--validation"
+													name="contact-face-place-of-work" placeholder="Место работы"
+													autocomplete="off">
 												<span class="form-elem__caption">Место работы<sup>*</sup></span>
-											</label>  
+											</label>
 										</div>
 										<label class="form-elem">
-											<input type="tel" class="form-elem__input form-elem__input--validation" name="contact-face-contact-address" placeholder="Контактный адрес" autocomplete="off">
+											<input type="tel" class="form-elem__input form-elem__input--validation"
+												name="contact-face-contact-address" placeholder="Контактный адрес"
+												autocomplete="off">
 											<span class="form-elem__caption">Контактный адрес<sup>*</sup></span>
 										</label>
-									</div> 
+									</div>
 									<button type="button" class="btn btn--blue btn--with-elem btn-add-relative">
 										<span>Добавить ещё контактные лица</span>
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.5 8H13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M8 2.5V13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.5 8H13.5" stroke="white" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M8 2.5V13.5" stroke="white" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
 									</button>
 								</fieldset>
-								<div class="form-questionnaire__btn-box form-questionnaire__btn-box--two-btn"> 
+								<div class="form-questionnaire__btn-box form-questionnaire__btn-box--two-btn">
 									<a href="#form-tab-4" class="btn btn--blue ">Предыдущий шаг</a>
 									<!-- -->
-									<button type="submit" class="btn btn--blue btn--with-elem btn-next" disabled="disabled" >
+									<button type="submit" class="btn btn--blue btn--with-elem btn-next"
+										disabled="disabled">
 										<span>Завершить</span>
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.5 8H13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M9 3.5L13.5 8L9 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg> 
-									</button> 
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M2.5 8H13.5" stroke="white" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M9 3.5L13.5 8L9 12.5" stroke="white" stroke-width="1.5"
+												stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
 								</div>
 								<span class="form-questionnaire__condition">
 									Заполните все поля перед тем как приступить к следующему шагу
@@ -620,21 +812,27 @@
 					</div>
 				</div>
 			</div>
-		</section> 
+		</section>
 	</main>
 	@@include('_footer.html')
 	<div class="great-shadow"></div>
 	<div class="modal-container">
 		<div class="modal modal-message">
 			<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path opacity="0.2" d="M30 52.5C42.4264 52.5 52.5 42.4264 52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30C7.5 42.4264 17.5736 52.5 30 52.5Z" fill="#1BCCAC"/>
-				<path d="M40.3125 24.375L26.5624 37.5L19.6875 30.9375" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-				<path d="M30 52.5C42.4264 52.5 52.5 42.4264 52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30C7.5 42.4264 17.5736 52.5 30 52.5Z" stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-			</svg> 
+				<path opacity="0.2"
+					d="M30 52.5C42.4264 52.5 52.5 42.4264 52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30C7.5 42.4264 17.5736 52.5 30 52.5Z"
+					fill="#1BCCAC" />
+				<path d="M40.3125 24.375L26.5624 37.5L19.6875 30.9375" stroke="#1BCCAC" stroke-width="2"
+					stroke-linecap="round" stroke-linejoin="round" />
+				<path
+					d="M30 52.5C42.4264 52.5 52.5 42.4264 52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30C7.5 42.4264 17.5736 52.5 30 52.5Z"
+					stroke="#1BCCAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
 			<h2 class="h5">Вы успешно заполнили персональные данные!</h2>
 			<div class="modal-message__text-box">
 				<p>
-					Для подачи заявления о приеме Вам необходимо выбрать интересующий уровень образования, заполнить и отправить анкету.
+					Для подачи заявления о приеме Вам необходимо выбрать интересующий уровень образования, заполнить и
+					отправить анкету.
 				</p>
 			</div>
 			<button class="btn btn--blue close-modal">ОК</button>
@@ -645,66 +843,84 @@
 				Типы речи в тексте
 			</h2>
 			<p>
-				<b>Речь</b> – это система общения, позволяющая людям обмениваться информацией. <b>Текст</b> – это речь, зафиксированная на каком-либо носителе. О чем бы ни шла речь в тексте, назначение ее сводится к трем целям, функциям (<b>функциональные типы</b>):
-			</p> 
+				<b>Речь</b> – это система общения, позволяющая людям обмениваться информацией. <b>Текст</b> – это речь,
+				зафиксированная на каком-либо носителе. О чем бы ни шла речь в тексте, назначение ее сводится к трем
+				целям, функциям (<b>функциональные типы</b>):
+			</p>
 			<ul>
 				<li>
 					Передача информации о развитии событий (когда где что и как произошло, происходит, произойдет).
 				</li>
 				<li>
-					Передача информации о характеристике явлений, объектов, людей (какой объект, как выглядит, в чем его особенности, отличия от других, оценка).
+					Передача информации о характеристике явлений, объектов, людей (какой объект, как выглядит, в чем его
+					особенности, отличия от других, оценка).
 				</li>
 				<li>
-					Передача информации с размышлениями о тех или иных событиях, явлениях (почему произошло так или иначе, могло ли быть по-другому, при каких условиях).
+					Передача информации с размышлениями о тех или иных событиях, явлениях (почему произошло так или
+					иначе, могло ли быть по-другому, при каких условиях).
 				</li>
 			</ul>
 			<p>
-				Цель текста определяет его содержание, смысл, предъявляет особые требования к структуре, отбору языковых средств. Сочетание этих факторов – функции, смысла, структуры – сформировало три функционально-смысловых типа речи:
-			</p> 
-			<ol>
-				<li>Описание</li>
-				<li>Повествование</li>
-				<li>Рассуждение</li>
-			</ol> 
-			<p>
-				<b>Речь</b> – это система общения, позволяющая людям обмениваться информацией. <b>Текст</b> – это речь, зафиксированная на каком-либо носителе. О чем бы ни шла речь в тексте, назначение ее сводится к трем целям, функциям (<b>функциональные типы</b>):
-			</p> 
-			<ul>
-				<li>
-					Передача информации о развитии событий (когда где что и как произошло, происходит, произойдет).
-				</li>
-				<li>
-					Передача информации о характеристике явлений, объектов, людей (какой объект, как выглядит, в чем его особенности, отличия от других, оценка).
-				</li>
-				<li>
-					Передача информации с размышлениями о тех или иных событиях, явлениях (почему произошло так или иначе, могло ли быть по-другому, при каких условиях).
-				</li>
-			</ul>
-			<p>
-				Цель текста определяет его содержание, смысл, предъявляет особые требования к структуре, отбору языковых средств. Сочетание этих факторов – функции, смысла, структуры – сформировало три функционально-смысловых типа речи:
-			</p> 
+				Цель текста определяет его содержание, смысл, предъявляет особые требования к структуре, отбору языковых
+				средств. Сочетание этих факторов – функции, смысла, структуры – сформировало три функционально-смысловых
+				типа речи:
+			</p>
 			<ol>
 				<li>Описание</li>
 				<li>Повествование</li>
 				<li>Рассуждение</li>
 			</ol>
 			<p>
-				<b>Речь</b> – это система общения, позволяющая людям обмениваться информацией. <b>Текст</b> – это речь, зафиксированная на каком-либо носителе. О чем бы ни шла речь в тексте, назначение ее сводится к трем целям, функциям (<b>функциональные типы</b>):
-			</p> 
+				<b>Речь</b> – это система общения, позволяющая людям обмениваться информацией. <b>Текст</b> – это речь,
+				зафиксированная на каком-либо носителе. О чем бы ни шла речь в тексте, назначение ее сводится к трем
+				целям, функциям (<b>функциональные типы</b>):
+			</p>
 			<ul>
 				<li>
 					Передача информации о развитии событий (когда где что и как произошло, происходит, произойдет).
 				</li>
 				<li>
-					Передача информации о характеристике явлений, объектов, людей (какой объект, как выглядит, в чем его особенности, отличия от других, оценка).
+					Передача информации о характеристике явлений, объектов, людей (какой объект, как выглядит, в чем его
+					особенности, отличия от других, оценка).
 				</li>
 				<li>
-					Передача информации с размышлениями о тех или иных событиях, явлениях (почему произошло так или иначе, могло ли быть по-другому, при каких условиях).
+					Передача информации с размышлениями о тех или иных событиях, явлениях (почему произошло так или
+					иначе, могло ли быть по-другому, при каких условиях).
 				</li>
 			</ul>
 			<p>
-				Цель текста определяет его содержание, смысл, предъявляет особые требования к структуре, отбору языковых средств. Сочетание этих факторов – функции, смысла, структуры – сформировало три функционально-смысловых типа речи:
-			</p> 
+				Цель текста определяет его содержание, смысл, предъявляет особые требования к структуре, отбору языковых
+				средств. Сочетание этих факторов – функции, смысла, структуры – сформировало три функционально-смысловых
+				типа речи:
+			</p>
+			<ol>
+				<li>Описание</li>
+				<li>Повествование</li>
+				<li>Рассуждение</li>
+			</ol>
+			<p>
+				<b>Речь</b> – это система общения, позволяющая людям обмениваться информацией. <b>Текст</b> – это речь,
+				зафиксированная на каком-либо носителе. О чем бы ни шла речь в тексте, назначение ее сводится к трем
+				целям, функциям (<b>функциональные типы</b>):
+			</p>
+			<ul>
+				<li>
+					Передача информации о развитии событий (когда где что и как произошло, происходит, произойдет).
+				</li>
+				<li>
+					Передача информации о характеристике явлений, объектов, людей (какой объект, как выглядит, в чем его
+					особенности, отличия от других, оценка).
+				</li>
+				<li>
+					Передача информации с размышлениями о тех или иных событиях, явлениях (почему произошло так или
+					иначе, могло ли быть по-другому, при каких условиях).
+				</li>
+			</ul>
+			<p>
+				Цель текста определяет его содержание, смысл, предъявляет особые требования к структуре, отбору языковых
+				средств. Сочетание этих факторов – функции, смысла, структуры – сформировало три функционально-смысловых
+				типа речи:
+			</p>
 			<ol>
 				<li>Описание</li>
 				<li>Повествование</li>
@@ -713,20 +929,27 @@
 		</div>
 		<div class="modal modal-text-2">
 			<button class="cross-btn close-modal"></button>
-			 <h2 class="h5">Какие бывают стили текста, примеры</h2>
-			 <p>
-				Для написания любого материала могут применяться разные стили текста (или речи — это одно и то же). Тут главное сделать правильный выбор, так как различные типы и стили текста подходят для определенной сферы общения (научная, официально-деловая, СМИ, быт, интернет и т. д.). <a href="https://stimylrosta.com.ua/kopirajting/199-kakie-byvayut-stili-teksta-primery"> посмотреть это можно перейдя по ссылке</a>
+			<h2 class="h5">Какие бывают стили текста, примеры</h2>
+			<p>
+				Для написания любого материала могут применяться разные стили текста (или речи — это одно и то же). Тут
+				главное сделать правильный выбор, так как различные типы и стили текста подходят для определенной сферы
+				общения (научная, официально-деловая, СМИ, быт, интернет и т. д.). <a
+					href="https://stimylrosta.com.ua/kopirajting/199-kakie-byvayut-stili-teksta-primery"> посмотреть это
+					можно перейдя по ссылке</a>
 				<p>
-					Результат диалога напрямую зависит от правильно подобранного стиля. Особо важно правильно подавать информацию для читателей, поскольку вербальные данные отсутствуют. Они, к сожалению, не могут увидеть ваши жесты, взгляд и мимику. 
-				</p> 
-			 </p>
+					Результат диалога напрямую зависит от правильно подобранного стиля. Особо важно правильно подавать
+					информацию для читателей, поскольку вербальные данные отсутствуют. Они, к сожалению, не могут
+					увидеть ваши жесты, взгляд и мимику.
+				</p>
+			</p>
 		</div>
 	</div>
-	<!-- ++++++++++JavaScript++++++++++--> 
+	<!-- ++++++++++JavaScript++++++++++-->
 	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
-	<script src="local/templates/lka/js/script.js"></script> 
+	<script src="local/templates/lka/js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
 	<!-- ++++++++++JavaScript end++++++++++-->
 </body>
 
 </html>
+

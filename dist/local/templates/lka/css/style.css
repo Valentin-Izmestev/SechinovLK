@@ -4310,6 +4310,43 @@ form .columns-box .form-elem {
           box-sizing: border-box;
 }
 
+.print-form-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.print-form-list li a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2rem;
+  min-height: 6.1rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+  font-size: 1.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: var(--great-transition);
+  -o-transition: var(--great-transition);
+  transition: var(--great-transition);
+  -webkit-box-shadow: 0 0 11px -11px var(--black);
+          box-shadow: 0 0 11px -11px var(--black);
+}
+.print-form-list li a svg {
+  margin-right: 1.5rem;
+}
+.print-form-list li a:hover {
+  text-decoration: none;
+  color: var(--green);
+  -webkit-box-shadow: 0 0 11px -7px var(--black);
+          box-shadow: 0 0 11px -7px var(--black);
+}
+.print-form-list li a:hover svg > path {
+  fill: var(--green);
+}
+
 @media screen and (max-width: 1090px) {
   .btn-burger {
     display: block;
@@ -4534,4 +4571,8 @@ form .columns-box .form-elem {
   .form-questionnaire .form-questionnaire__condition {
     margin-top: 0;
   }
+}
+.temp {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }

@@ -1,0 +1,33 @@
+.print-form-list{
+    li{
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+        a{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 1.5rem 2rem;;
+            min-height: 6.1rem;
+            border-radius: 1rem;
+            background-color: var(--white);
+            font-size: 1.6rem;
+            box-sizing: border-box; 
+            transition: var(--great-transition);
+            box-shadow: 0 0 11px -11px var(--black);
+            svg{
+                margin-right: 1.5rem;
+            }
+            &:hover{
+                text-decoration: none;
+                color: var(--green);
+                box-shadow: 0 0 11px -7px var(--black);
+                svg{
+                    &>path{
+                        fill: var(--green);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -12,4 +12,10 @@
  @import 'header'; 
  @import 'auth'; 
  @import 'sections'; 
+ @import 'pring-form'; 
  @import 'media'; 
+
+
+ .temp{
+    backdrop-filter: blur(4px);
+ }

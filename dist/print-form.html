@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="./local/templates/lka/css/style.min.css">
+ 
+</head>
+
+<body> 
+	<header id="header">
+    <div class="inner">
+        <div class="header__top">
+            <a href="/" class="logo">
+                <img src="local/templates/lka/img/logo.svg" alt="Логотип Сеченовского университета">
+                <span>Личный кабинет абитуриента</span>
+            </a>
+            <a href="#" class="header-btn header-btn--lang uppercase">
+                en
+            </a>
+            <div class="header-btn header-btn--events">
+                <button class="header-btn events" aria-label="открыть окно с уведомлениями">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.82996 8.93745C4.82883 8.12208 4.98908 7.31455 5.30149 6.56141C5.6139 5.80826 6.07228 5.1244 6.65022 4.54923C7.22816 3.97407 7.91422 3.51898 8.66886 3.2102C9.4235 2.90142 10.2318 2.74506 11.0471 2.75012C14.4494 2.77541 17.1708 5.60336 17.1708 9.01512V9.62495C17.1708 12.7029 17.8147 14.4889 18.3819 15.4651C18.443 15.5694 18.4755 15.688 18.4761 15.8089C18.4768 15.9297 18.4455 16.0487 18.3855 16.1536C18.3256 16.2586 18.239 16.3458 18.1345 16.4067C18.03 16.4675 17.9114 16.4996 17.7905 16.4999H4.20955C4.08865 16.4996 3.96997 16.4674 3.86549 16.4066C3.76101 16.3458 3.67441 16.2585 3.61444 16.1535C3.55447 16.0486 3.52324 15.9296 3.52391 15.8087C3.52457 15.6878 3.55711 15.5693 3.61824 15.465C4.18571 14.4887 4.82996 12.7027 4.82996 9.62495L4.82996 8.93745Z" stroke="#7482A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.25 16.5V17.1875C8.25 17.9168 8.53973 18.6163 9.05546 19.132C9.57118 19.6478 10.2707 19.9375 11 19.9375C11.7293 19.9375 12.4288 19.6478 12.9445 19.132C13.4603 18.6163 13.75 17.9168 13.75 17.1875V16.5" stroke="#7482A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                    <span class="events__count">4</span>
+                </button>
+                <div class="notification-tab " >
+                    <div class="notification-tab__control">
+                        <button class="btn btn--solid  btn--lowercase active" aria-label="открыть уведомления от продразделений">Подразделения</button>
+                        <button class="btn btn--solid btn--lowercase" aria-label="открыть уведомления от преподавателей">Преподаватели</button>
+                    </div>
+                    <div class="notification-tab__field notification-tab-field notification-tab__field--show"> 
+                        <ul class="notification__list notification-list">
+                            <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация отдела платных образовательных услуг
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>  
+                             </li>
+                             <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация отдела платных образовательных услуг
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>   
+                             </li>
+                             <li class="notification-list__item notification-list-item"> 
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация о работе
+                                        </span>
+                                    </span> 
+                                </a> 
+                             </li>
+                        </ul>
+                        <div class="notification-tab-field__footer">
+                            <a href="#" class="btn btn--dashed">Все объявления</a> 
+                        </div>
+                        
+                    </div>
+                    <div class="notification-tab__field "> 
+                        <ul class="notification__list notification-list">
+                            <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Срочно сдать задолжность по информатике!
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>  
+                             </li>
+                             <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Внимание - зачет по праву.
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>   
+                             </li>
+                             <li class="notification-list__item notification-list-item"> 
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Внимание - зачет по диамату.
+                                        </span>
+                                        <span class="no-read-marker"></span>
+                                    </span> 
+                                </a>  
+                             </li>
+                             <li class="notification-list__item notification-list-item">
+                                <a href="#" class="notification-list-item__link">
+                                    <time datetime="2022-04-18 00:00">18.04.2022</time>
+                                    <span class="notification-list-item__body">
+                                        <span class="notification-list-item__message">
+                                            Информация о работе
+                                        </span>
+                                    </span> 
+                                </a>  
+                             </li>
+                        </ul>
+                        <div class="notification-tab-field__footer">
+                            <a href="#" class="btn btn--dashed">Все объявления</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn--blue btn--with-elem output-btn" title="Выход">
+                <span>sobzina@gmail.com</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59375 13.2812L11.875 10L8.59375 6.71875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.12268 10L11.8727 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.625 2.5L16.25 2.5C16.4158 2.5 16.5747 2.56585 16.6919 2.68306C16.8092 2.80027 16.875 2.95924 16.875 3.125L16.875 16.875C16.875 17.0408 16.8092 17.1997 16.6919 17.3169C16.5747 17.4342 16.4158 17.5 16.25 17.5L10.625 17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </a>
+            <button class="header-btn btn-burger"><span></span></button>
+        </div>
+        <nav class="main-menu-box">
+            <a href="/" class="logo mobile">
+                <img src="local/templates/lka/img/logo.svg" alt="Логотип Сеченовского университета">
+                <span>Личный кабинет абитуриента</span>
+            </a>
+            <ul class="main-menu">
+                <li><a href="#">Подать заявление</a></li>
+                <li><a href="#">Мои заявления</a></li>
+                <li><a href="#">Вступительные испытания</a></li>
+                <li><a href="#">Печатные формы заявлений</a></li>
+                <li><a href="#" class="current">Подготовительный факультет для иностранных  граждан</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+	<main class="main">
+		 <div class="inner">
+			<h1 class="page-title">Печатные формы</h1>
+			<ul class="print-form-list">
+				<li> 
+					<a href="#">
+						<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="svg-printer" d="M5 14H39C41.2091 14 43 15.7909 43 18V30C43 30.5523 42.5523 31 42 31H2C1.44772 31 1 30.5523 1 30V18C1 15.7909 2.79086 14 5 14Z" fill="#447BF8" stroke="#0C111D" stroke-width="2"/>
+							<mask id="path-2-inside-1_135_21" fill="white">
+							<rect x="7" width="30" height="23" rx="1"/>
+							</mask>
+							<rect x="7" width="30" height="23" rx="1" fill="white" stroke="#0C111D" stroke-width="4" stroke-linejoin="round" mask="url(#path-2-inside-1_135_21)"/>
+							<mask id="path-3-inside-2_135_21" fill="white">
+							<rect x="7" y="26" width="30" height="12" rx="1"/>
+							</mask>
+							<rect x="7" y="26" width="30" height="12" rx="1" fill="white" stroke="#0C111D" stroke-width="4" stroke-linejoin="round" mask="url(#path-3-inside-2_135_21)"/>
+							<path d="M14 7.5H30" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+							<path d="M14 11.5H30" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+							<path d="M14 16H25.1424" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+						</svg>
+						Заявка о предоставлении академического отпуска
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="svg-printer" d="M5 14H39C41.2091 14 43 15.7909 43 18V30C43 30.5523 42.5523 31 42 31H2C1.44772 31 1 30.5523 1 30V18C1 15.7909 2.79086 14 5 14Z" fill="#447BF8" stroke="#0C111D" stroke-width="2"/>
+							<mask id="path-2-inside-1_135_21" fill="white">
+							<rect x="7" width="30" height="23" rx="1"/>
+							</mask>
+							<rect x="7" width="30" height="23" rx="1" fill="white" stroke="#0C111D" stroke-width="4" stroke-linejoin="round" mask="url(#path-2-inside-1_135_21)"/>
+							<mask id="path-3-inside-2_135_21" fill="white">
+							<rect x="7" y="26" width="30" height="12" rx="1"/>
+							</mask>
+							<rect x="7" y="26" width="30" height="12" rx="1" fill="white" stroke="#0C111D" stroke-width="4" stroke-linejoin="round" mask="url(#path-3-inside-2_135_21)"/>
+							<path d="M14 7.5H30" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+							<path d="M14 11.5H30" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+							<path d="M14 16H25.1424" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+						</svg>
+						Бланк на оплату обучения
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="svg-printer" d="M5 14H39C41.2091 14 43 15.7909 43 18V30C43 30.5523 42.5523 31 42 31H2C1.44772 31 1 30.5523 1 30V18C1 15.7909 2.79086 14 5 14Z" fill="#447BF8" stroke="#0C111D" stroke-width="2"/>
+							<mask id="path-2-inside-1_135_21" fill="white">
+							<rect x="7" width="30" height="23" rx="1"/>
+							</mask>
+							<rect x="7" width="30" height="23" rx="1" fill="white" stroke="#0C111D" stroke-width="4" stroke-linejoin="round" mask="url(#path-2-inside-1_135_21)"/>
+							<mask id="path-3-inside-2_135_21" fill="white">
+							<rect x="7" y="26" width="30" height="12" rx="1"/>
+							</mask>
+							<rect x="7" y="26" width="30" height="12" rx="1" fill="white" stroke="#0C111D" stroke-width="4" stroke-linejoin="round" mask="url(#path-3-inside-2_135_21)"/>
+							<path d="M14 7.5H30" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+							<path d="M14 11.5H30" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+							<path d="M14 16H25.1424" stroke="#0C111D" stroke-width="2" stroke-linecap="round"/>
+						</svg>
+						Форма заявки на отсрочку от армии
+					</a>
+				</li>
+			</ul>
+		 </div>
+	</main>
+	<footer id="footer">
+    <div class="inner"> 
+         Подвал
+    </div> 
+</footer>
+	<div class="great-shadow"></div>
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+	<script src="local/templates/lka/js/script.js"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>
+
